@@ -1,0 +1,52 @@
+%@BOOK{Eiben_2003,
+% author = {A.E. Eiben and J.E. Smith},
+% title = "Introduction to Evolutionary Computing",
+% publisher = {Springer},
+% year = {2003}
+%}
+%@ARTICLE{Durillo_2009,
+% author = {Juan J. Durillo and José Garcı́a-Nieto and Antonio J. Nebro and Carlos A. Coello Coello 2 , Francisco Luna and Enrique Alba},
+% title = "Multi-Objective Particle Swarm Optimizers: An Experimental Comparison",
+% journal={IEEE Transactions on Evolutionary Computation},
+% pages={495--509},
+% series = {EMO '09},
+% year = {2009}
+%}
+
+@ARTICLE{Lacomme_2006,
+  author = "P. Lacomme and C. Prins and M. Sevaux",
+  title = {A genetic algorithm for a bi-objective capacitated arc routing problem},
+  journal = {Computers \& Operations Research},
+  volume = {33},
+  pages = {3473--3493},
+  year = {2006}
+}
+
+@BOOK{Lakatos_2003,
+  author = {Eva Maria Lakatos and Marina de Andrade Marconi},
+  title = {Fundamentos de metodologia científica},
+  edition = 7,
+  publisher = {Atlas},
+  year = {2003}
+}
+
+@ARTICLE{Chen3_2014,
+  author = {Chun-Lung Chen and Shin-Ying Huang and Yeu-Ruey Tzeng and Chuen-Lung Chen},
+  title = "A revised discrete particle swarm optimization algorithm for permutation flow-shop scheduling problem",
+  journal={Soft Computing},
+  publisher={Springer Berlin Heidelberg},
+  volume={18},
+  pages={2271--2282},
+  year={2014}
+}
+
+@ARTICLE{Xue_2014,
+  author = {Bingxia Xue and Xin Ma and Haibo Wang and Jason Gu and and Yibin Li},
+  title = "Improved	variable-length	particle swarm optimization	for	structure-adjustable extreme learning machine",
+  journal={Control and Intelligent Systems},
+  year={2014},
+  volume={42},
+  issue={4},
+  pages={1--9}
+}
+

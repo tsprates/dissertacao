@@ -1,0 +1,18 @@
+%\begin{table}[H]
+%\caption{Efetividade do algoritmo pelo produto da sensibilidade pela especificidade por classe para base Hepatitis.}
+%\label{tab:sen_esp_classe_hepat}
+%\vspace{12pt}
+%\centering{}
+%\scalebox{0.8}{
+%\begin{tabular}{ l l l l l}
+% \hline               & \textbf{{\em to die}}        & \textbf{{\em to live}}       \\
+% \hline \textbf{PSO*} & \textbf{0.676839 (0.057786)} & \textbf{0.787291 (0.030652)} \\
+% \hline \textbf{J48}  & 0.311515 (0.088179)          & 0.311515 (0.088179)          \\
+% \hline \textbf{SMO}  & 0.512879 (0.045334)          & 0.512879 (0.045334)          \\
+% \hline \textbf{RBF}  & 0.555152 (0.040709)          & 0.555152 (0.040709)          \\
+% \hline
+%\end{tabular}
+%}
+%\end{table}
+
+

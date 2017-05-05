@@ -1,0 +1,363 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Basseur e Burke 2007]{Basseur_2007}
+\abntrefinfo{Basseur e Burke}{BASSEUR; BURKE}{2007}
+{BASSEUR, M.; BURKE, E.~K. Indicator-based multi-objective local search.
+\emph{Evolutionary Computation}, IEEE, p. 3100--3107, 2007.}
+
+\bibitem[Broomhead e Lowe 1988]{Broomhead_1988}
+\abntrefinfo{Broomhead e Lowe}{BROOMHEAD; LOWE}{1988}
+{BROOMHEAD, D.~S.; LOWE, D. Multivariable functional interpolation and adaptive
+  networks.
+\emph{Complex Systems}, v.~2, p. 321--355, 1988.}
+
+\bibitem[Carrano, Wanner e Takahashi 2011]{Carrano_2011}
+\abntrefinfo{Carrano, Wanner e Takahashi}{CARRANO; WANNER; TAKAHASHI}{2011}
+{CARRANO, E.~G.; WANNER, E.~F.; TAKAHASHI, R. H.~C. A multicriteria statistical
+  based comparison methodology for evaluating evolutionary algorithms.
+\emph{Evolutionary Computation}, IEEE, v.~15, p. 848--870, 2011.}
+
+\bibitem[Castro e Ferrari 2016]{Castro_2016}
+\abntrefinfo{Castro e Ferrari}{CASTRO; FERRARI}{2016}
+{CASTRO, L. de; FERRARI, D.~G. \emph{Introdução à Mineração de Dados:
+  Conceitos básicos, Algoritmos e Aplicações}. [S.l.]: Editora Saraiva,
+  2016.}
+
+\bibitem[Castro e Timmis 2002]{Castro_2002}
+\abntrefinfo{Castro e Timmis}{CASTRO; TIMMIS}{2002}
+{CASTRO, L. de; TIMMIS, J. \emph{Artificial Immune Systems: A New Computational
+  Intelligence Approach}. [S.l.]: Springer-Verlag, 2002.}
+
+\bibitem[Cervantes, Galvain e Isasi 2005]{Cervantes_2005}
+\abntrefinfo{Cervantes, Galvain e Isasi}{CERVANTES; GALVAIN; ISASI}{2005}
+{CERVANTES, A.; GALVAIN, I.; ISASI, P. A comparison between the pittsburgh and
+  michigan approaches for the binary pso algorithm.
+\emph{IEEE Congress on Evolutionary Computation}, IEEE, v.~3, p. 290--297,
+  2005.}
+
+\bibitem[Chen e Ludwig 2012]{Chen2_2012}
+\abntrefinfo{Chen e Ludwig}{CHEN; LUDWIG}{2012}
+{CHEN, M.; LUDWIG, S.~A. Discrete particle swarm optimization with local search
+  strategy for rule classification.
+\emph{Fourth World Congress on Nature and Biologically Inspired Computing
+  (NaBIC)}, p. 162--167, 2012.}
+
+\bibitem[Chen, Han e Yu 1996]{Chen_1996}
+\abntrefinfo{Chen, Han e Yu}{CHEN; HAN; YU}{1996}
+{CHEN, M.-S.; HAN, J.; YU, P.~S. Data mining: An overview from a database
+  perspective.
+\emph{IEEE Transactions on Knowledge and Data Engineering}, v.~8, n.~6, p.
+  866--883, 1996.}
+
+\bibitem[Coello-Coello 2006]{Coello_2006}
+\abntrefinfo{Coello-Coello}{COELLO-COELLO}{2006}
+{COELLO-COELLO, C.~A. Evolutionary multi-objective optimization: A historical
+  view of the field.
+\emph{IEEE Computation Inteligence Magazine}, v.~8, p. 28--36, 2006.}
+
+\bibitem[Coello-Coello, Pulido e Lechuga 2004]{Coello_2004}
+\abntrefinfo{Coello-Coello, Pulido e Lechuga}{COELLO-COELLO; PULIDO;
+  LECHUGA}{2004}
+{COELLO-COELLO, C.~A.; PULIDO, G.~T.; LECHUGA, M.~S. Handling multiple
+  objectives with particle swarm optimization.
+\emph{IEEE Transactions on Evolutionary Computation}, v.~8, p. 256--279, 2004.}
+
+\bibitem[Cunha, Takahashi e Antunes 2014]{Cunha_2014}
+\abntrefinfo{Cunha, Takahashi e Antunes}{CUNHA; TAKAHASHI; ANTUNES}{2014}
+{CUNHA, A.~G.; TAKAHASHI, R.; ANTUNES, C.~H. \emph{Manual de computação
+  evolutiva e metaheurística}. [S.l.]: Imprensa da Universidade de Coimbra;
+  Editora da Universidade Federal de Minas Gerais, 2014.}
+
+\bibitem[Dorigo, Maniezzo e Colorni 1996]{Dorigo_1996}
+\abntrefinfo{Dorigo, Maniezzo e Colorni}{DORIGO; MANIEZZO; COLORNI}{1996}
+{DORIGO, M.; MANIEZZO, V.; COLORNI, A. Ant system: Optimization by a colony of
+  cooperating agents.
+\emph{IEEE Transactions on Systems, Man, and Cybernetics - Part B Cybernetics},
+  v.~26, p. 29--41, 1996.}
+
+\bibitem[Drugan e Thierens 2012]{Drugan_2012}
+\abntrefinfo{Drugan e Thierens}{DRUGAN; THIERENS}{2012}
+{DRUGAN, M.~M.; THIERENS, D. Stochastic pareto local search: Pareto
+  neighbourhood exploration and perturbation strategies.
+\emph{Journal of Heuristics}, v.~18, p. 727--766, 2012.}
+
+\bibitem[Eberhart e Shi 2001]{Eberhart_2001}
+\abntrefinfo{Eberhart e Shi}{EBERHART; SHI}{2001}
+{EBERHART, R.; SHI, Y. Particle swarm optimization: Developments, applications
+  and resources.
+IEEE, v.~1, p. 81--86, 2001.}
+
+\bibitem[Fayyad et al. 1996]{Fayyad_1996_2}
+\abntrefinfo{Fayyad et al.}{FAYYAD et al.}{1996a}
+{FAYYAD, U. et al. From data mining to knowledge discovery in databases.
+1996.}
+
+\bibitem[Fayyad et al. 1996]{Fayyad_1996}
+\abntrefinfo{Fayyad et al.}{FAYYAD et al.}{1996b}
+{FAYYAD, U. et al. Knowledge discovery and data mining: Towards a unifying
+  framework.
+1996.
+Acessado em 21 de Setembro de 2015.
+Dispon{\'\i}vel em:
+  \url{http://www.cs.columbia.edu/~gravano/cs6111/Readings/fayyad.pdf}.}
+
+\bibitem[Freitas 2003]{Freitas_2003}
+\abntrefinfo{Freitas}{FREITAS}{2003}
+{FREITAS, A.~A. A survey of evolutionary algorithms for data mining and
+  knowledge discovery.
+2003.}
+
+\bibitem[Handl e Knowles 2007]{Handl_2007}
+\abntrefinfo{Handl e Knowles}{HANDL; KNOWLES}{2007}
+{HANDL, J.; KNOWLES, J. An evolutionary approach to multiobjective clustering.
+\emph{Trans. Evol. Comp}, IEEE Press, v.~11, n.~1, p. 56--76, fev. 2007.}
+
+\bibitem[Hassani e Lee 2013]{Hassani_2013}
+\abntrefinfo{Hassani e Lee}{HASSANI; LEE}{2013}
+{HASSANI, K.; LEE, W.-S. \emph{An Incremental Parallel Particle Swarm Approach
+  for Classification Rule Discovery from Dynamic Data}. [S.l.]: IEEE Computer
+  Society, 2013. 430--435~p.}
+
+\bibitem[Haubelt, Gamenik e Teich 2005]{Haubelt_2005}
+\abntrefinfo{Haubelt, Gamenik e Teich}{HAUBELT; GAMENIK; TEICH}{2005}
+{HAUBELT, C.; GAMENIK, J.; TEICH, J. \emph{Initial Population Construction for
+  Convergence Improvement of MOEAs}. [S.l.]: Springer-Verlag, 2005.
+  191--205~p.}
+
+\bibitem[Higashi e Iba 2003]{Higashi_2003}
+\abntrefinfo{Higashi e Iba}{HIGASHI; IBA}{2003}
+{HIGASHI, N.; IBA, H. Particle swarm optimization with gaussian mutation.
+\emph{Swarm Intelligence Symposium}, IEEE, p. 72--79, 2003.}
+
+\bibitem[Hoffmann et al. 2011]{Hoffmann_2011}
+\abntrefinfo{Hoffmann et al.}{HOFFMANN et al.}{2011}
+{HOFFMANN, M. et al. \emph{Discrete Particle Swarm Optimization for TSP:
+  Theoretical Results and Experimental Evaluations}. [S.l.]: Springer-Verlag,
+  2011. 416--427~p.  (ICAIS'11).}
+
+\bibitem[Hu, Eberheart e Shi 2003]{Hu_2003}
+\abntrefinfo{Hu, Eberheart e Shi}{HU; EBERHEART; SHI}{2003}
+{HU, X.; EBERHEART, R.~C.; SHI, Y. Particle swarm with extended memory for
+  multiobjective optimization.
+IEEE, p. 193--197, 2003.}
+
+\bibitem[Jancauskas 2014]{Jancauskas_2014}
+\abntrefinfo{Jancauskas}{JANCAUSKAS}{2014}
+{JANCAUSKAS, V. Empirical study of particle swarm optimization mutation
+  operators.
+\emph{Baltic J. Modern Computing}, v.~2, p. 199--214, 2014.}
+
+\bibitem[Keerthi et al. 2001]{Keerthi_2001}
+\abntrefinfo{Keerthi et al.}{KEERTHI et al.}{2001}
+{KEERTHI, S.~S. et al. Improvements to platt's smo algorithm for svm classifier
+  design.
+\emph{Neural Comput.}, MIT Press, v.~13, n.~3, p. 637--649, mar. 2001.}
+
+\bibitem[Kennedy e Eberhart 1995]{Kennedy_1995}
+\abntrefinfo{Kennedy e Eberhart}{KENNEDY; EBERHART}{1995}
+{KENNEDY, J.; EBERHART, R. Particle swarm optimization.
+IEEE, p. 1942--1948, 1995.}
+
+\bibitem[Kennedy e Eberhart 1997]{Kennedy_1997}
+\abntrefinfo{Kennedy e Eberhart}{KENNEDY; EBERHART}{1997}
+{KENNEDY, J.; EBERHART, R. A discrete binary version of the particle swarm
+  algorithm.
+IEEE, v.~5, p. 4104--4108, 1997.}
+
+\bibitem[Kennedy e Shi 2001]{Kennedy_2001}
+\abntrefinfo{Kennedy e Shi}{KENNEDY; SHI}{2001}
+{KENNEDY, J.; SHI, Y. Particle swarm optimization: Developments, applications
+  and resources.
+IEEE, v.~2, p. 81--86, 2001.}
+
+\bibitem[Krohling 2004]{Krohling_2004}
+\abntrefinfo{Krohling}{KROHLING}{2004}
+{KROHLING, R.~A. Gaussian swarm: a novel particle swarm optimization algorithm.
+\emph{Cybernetics and Intelligent Systems, 2004 IEEE Conference on}, p.
+  372--376, 2004.}
+
+\bibitem[Liu et al. 2004]{Liu_2004}
+\abntrefinfo{Liu et al.}{LIU et al.}{2004}
+{LIU, Y. et al. \emph{Rule Discovery with Particle Swarm Optimization}. [S.l.]:
+  Springer Berlin Heidelberg, 2004. v.~3309. 291--296~p.}
+
+\bibitem[Maia 2012]{Renato_2012}
+\abntrefinfo{Maia}{MAIA}{2012}
+{MAIA, R.~D.
+\emph{Colônia de Abelhas como Modelo para Otimização Multimodal em Espaços
+  Contínuos: Um Abordagem Baseada em Alocação de Tarefas}.
+Tese (Doutorado) --- Universidade Federal de Minas Gerais, Minas Gerais,
+  Brasil, 2012. Editora UFMG, Minas Gerais, 2012.}
+
+\bibitem[Maia, Castro e Caminhas 2012]{Renato_2013}
+\abntrefinfo{Maia, Castro e Caminhas}{MAIA; CASTRO; CAMINHAS}{2012}
+{MAIA, R.~D.; CASTRO, L.~N. de; CAMINHAS, W.~M. Optbees - a bee-inspired
+  algorithm for solving continuous optimization problems.
+\emph{2013 BRICS Congress on 1st Computational BRICS Countries Intelligence
+  Congress \& on 11th Computational Brazilian Congress Intelligence on
+  Computational Intelligence}, p. 142--151, 2012.}
+
+\bibitem[Mendes 2013]{Joao_2013}
+\abntrefinfo{Mendes}{MENDES}{2013}
+{MENDES, J.~B.
+\emph{Uma Abordagem Multiobjetivo para o Problema de Despacho de Caminhões em
+  Minas a Céu Aberto}.
+Tese (Doutorado) --- Universidade Federal de Minas Gerais, Minas Gerais,
+  Brasil, 2013. Editora UFMG, Minas Gerais, 2013.}
+
+\bibitem[Millonas 1993]{Millonas_1993}
+\abntrefinfo{Millonas}{MILLONAS}{1993}
+{MILLONAS, M.~M. Swarms, phase transitions, and collective intelligence.
+1993.
+Acessado em 21 de Janeiro de 2017.
+Dispon{\'\i}vel em:
+  \url{http://samoa.santafe.edu/media/workingpapers/93-06-039.pdf}.}
+
+\bibitem[Mishra 2016]{Mishra_2016}
+\abntrefinfo{Mishra}{MISHRA}{2016}
+{MISHRA, A.~K. Pso based swarm intelligence technique for multi-objective
+  classification rule mining.
+\emph{International Journal of Computer Applications}, v.~137, p. 18--22,
+  2016.}
+
+\bibitem[Pan et al. 2008]{Pan_2008}
+\abntrefinfo{Pan et al.}{PAN et al.}{2008}
+{PAN, Q.-K. et al. A hybrid discrete particle swarm optimization algorithm for
+  the no-wait flow shop scheduling problem with makespan criterion.
+\emph{Advanced Manufacturing Technology}, Springer-Verlag, v.~38, p. 337--347,
+  2008.}
+
+\bibitem[Parsopoulos e Vrahatis 2009]{Parsopoulos_2008}
+\abntrefinfo{Parsopoulos e Vrahatis}{PARSOPOULOS; VRAHATIS}{2009}
+{PARSOPOULOS, K.~E.; VRAHATIS, M.~N. \emph{(Chapter II) Multi-Objective
+  Particles Swarm Optimization Approaches}. [S.l.]: IGI Global, 2009.
+  20--41~p.}
+
+\bibitem[Pereira 2012]{Pereira_2012}
+\abntrefinfo{Pereira}{PEREIRA}{2012}
+{PEREIRA, M. de A.
+\emph{Classificação de Dados Híbridos Através de Algoritmos
+  Evolucionários}.
+Tese (Doutorado) --- Universidade Federal de Minas Gerais, Minas Gerais,
+  Brasil, 2012. Editora UFMG, Minas Gerais, 2012.}
+
+\bibitem[Pereira et al. 2014]{Pereira_2014}
+\abntrefinfo{Pereira et al.}{PEREIRA et al.}{2014}
+{PEREIRA, M. de A. et al. A niching genetic programming-based multi-objective
+  algorithm for hybrid data classification.
+\emph{Neurocomputing}, Elvesier, v.~133, p. 342--357, 2014.}
+
+\bibitem[Pereira, Júnior e Vasconcelos 2010]{Pereira_2010}
+\abntrefinfo{Pereira, Júnior e Vasconcelos}{PEREIRA; JúNIOR;
+  VASCONCELOS}{2010}
+{PEREIRA, M. de A.; JúNIOR, C. A.~D.; VASCONCELOS, J.~A. de. A niched genetic
+  programming algorithm for classification rules discovery in geographic
+  databases.
+\emph{SEAL 2010, Lecture Notes in Computer Science}, p. 260--269, 2010.}
+
+\bibitem[Quinlan 1986]{Quinlan_1986}
+\abntrefinfo{Quinlan}{QUINLAN}{1986}
+{QUINLAN, J.~R. Induction of decision trees.
+\emph{Machine Learning 1}, p. 81--106, 1986.}
+
+\bibitem[Reddy e Kumar 2007]{Reddy_2007}
+\abntrefinfo{Reddy e Kumar}{REDDY; KUMAR}{2007}
+{REDDY, M.~J.; KUMAR, D.~N. Multi-objective particle swarm optimization for
+  generating optimal trade-offs in reservoir operation.
+\emph{Wiley InterScience}, v.~21, p. 2897--2909, 2007.}
+
+\bibitem[Reyes-Sierra e Coello-Coello 2005]{Reyes_2005}
+\abntrefinfo{Reyes-Sierra e Coello-Coello}{REYES-SIERRA; COELLO-COELLO}{2005}
+{REYES-SIERRA, M.; COELLO-COELLO, C.~A. Improving pso-based multi-objective
+  optimization using crowding, mutation and $\in$-dominance.
+Springer-Verlag, p. 505--519, 2005.}
+
+\bibitem[Reyes-Sierra e Coello-Coello 2006]{Reyes_2006}
+\abntrefinfo{Reyes-Sierra e Coello-Coello}{REYES-SIERRA; COELLO-COELLO}{2006}
+{REYES-SIERRA, M.; COELLO-COELLO, C.~A. Multi-objective particle swarm
+  optimizers: A survey of the state-of-the-art.
+\emph{International Journal of Computational Intelligence Research}, IEEE, p.
+  287--308, 2006.}
+
+\bibitem[Rini, Shamsuddin e Yuhaniz 2011]{Rini_2011}
+\abntrefinfo{Rini, Shamsuddin e Yuhaniz}{RINI; SHAMSUDDIN; YUHANIZ}{2011}
+{RINI, D.~P.; SHAMSUDDIN, S.~M.; YUHANIZ, S.~S. Particle swarm optimization:
+  Technique, system and challenges.
+\emph{International Journal of Computer Applications}, v.~14, n.~1, p. 19--27,
+  2011.}
+
+\bibitem[Rosendo e Pozo 2010]{Rosendo_2010}
+\abntrefinfo{Rosendo e Pozo}{ROSENDO; POZO}{2010}
+{ROSENDO, M.; POZO, A. Applying a discrete particle swarm optimization
+  algorithm to combinatorial problems.
+\emph{IEEE Computer Society}, IEEE, p. 235--240, 2010.}
+
+\bibitem[Santana, Pontes e Bastos-Filho 2009]{Santana_2009}
+\abntrefinfo{Santana, Pontes e Bastos-Filho}{SANTANA; PONTES;
+  BASTOS-FILHO}{2009}
+{SANTANA, R.~A.; PONTES, M.~R.; BASTOS-FILHO, C. J.~A. A multiple objective
+  particle swarm optimization approach using crowding distance and roulette
+  wheel.
+IEEE, p. 237--242, 2009.}
+
+\bibitem[Sousa, Silva e Neves 2004]{Sousa_2004}
+\abntrefinfo{Sousa, Silva e Neves}{SOUSA; SILVA; NEVES}{2004}
+{SOUSA, T.; SILVA, A.; NEVES, A. Particle swarm based data mining algorithms
+  for classification tasks.
+\emph{Parallel Comput.}, Elsevier Science Publishers B. V., p. 767--783, 2004.}
+
+\bibitem[Valle et al. 2008]{Valle_2008}
+\abntrefinfo{Valle et al.}{VALLE et al.}{2008}
+{VALLE, Y. del et al. Particle swarm optimization: Basic concepts, variants and
+  applications in power systems.
+\emph{IEEE Transactions on Evolutionary Computation}, IEEE, p. 171--195, 2008.}
+
+\bibitem[Wang e Zhang 2011]{Wang2_2011}
+\abntrefinfo{Wang e Zhang}{WANG; ZHANG}{2011}
+{WANG, H.; ZHANG, Y. Improvement of discrete particle swarm classification
+  system.
+IEEE, p. 1027--1031, 2011.}
+
+\bibitem[Wang e Tang 2011]{Wang3_2011}
+\abntrefinfo{Wang e Tang}{WANG; TANG}{2011}
+{WANG, X.; TANG, L. A discrete particle swarm optimization algorithm with
+  self-adaptive diversity control for the permutation flowshop problem with
+  blocking.
+\emph{Applied Soft Computing}, v.~12, p. 652--662, 2011.}
+
+\bibitem[Wang, Sun e Zhang 2007]{Wang_2007}
+\abntrefinfo{Wang, Sun e Zhang}{WANG; SUN; ZHANG}{2007}
+{WANG, Z.; SUN, X.; ZHANG, D. A pso-based classification rule mining algorithm.
+Springer-Verlag, 2007.}
+
+\bibitem[Witten e Eiben 2005]{Witten_2005}
+\abntrefinfo{Witten e Eiben}{WITTEN; EIBEN}{2005}
+{WITTEN, I.~H.; EIBEN, F. \emph{Data mining: Practical Machine Learning Tools
+  and Techniques}. [S.l.]: Morgan Kaufmann Publishers Inc., 2005.}
+
+\bibitem[Zachariadis e Kiranoudis 2010]{Zachariadis_2010}
+\abntrefinfo{Zachariadis e Kiranoudis}{ZACHARIADIS; KIRANOUDIS}{2010}
+{ZACHARIADIS, E.~E.; KIRANOUDIS, C.~T. A strategy for reducing the
+  computational complexity of local search-based methods for the vehicle
+  routing problem.
+\emph{Computers \& Operations Research}, v.~37, p. 2089--2105, 2010.}
+
+\bibitem[Zahiri e Seyedin 2007]{Zahari_2007}
+\abntrefinfo{Zahiri e Seyedin}{ZAHIRI; SEYEDIN}{2007}
+{ZAHIRI, S.-H.; SEYEDIN, S.-A. Swarm intelligence based classifiers.
+\emph{Journal of the Franklin Institute}, v.~344, p. 362--376, 2007.}
+
+\bibitem[Zuben e Attux 2007]{VonZuben_2007}
+\abntrefinfo{Zuben e Attux}{ZUBEN; ATTUX}{2007}
+{ZUBEN, F. J.~V.; ATTUX, R. R.~F. Inteligência de enxame.
+2007.
+Acessado em 21 de Setembro de 2015.
+Dispon{\'\i}vel em:
+  \url{ftp://ftp.dca.fee.unicamp.br/pub/docs/vonzuben/ia013\_1s07/topico4\_07.pdf}.}
+
+\end{thebibliography}

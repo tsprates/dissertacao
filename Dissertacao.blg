@@ -1,0 +1,90 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Dissertacao.aux
+The style file: abntex2-alf.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Database file #1: abntex2-options.bib
+Database file #2: references.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+There is no name in "" for entry Fayyad_1996
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996_2
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996_2
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996_2
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996_2
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996_2
+while executing---line 2091 of file abntex2-alf.bst
+There is no name in "" for entry Fayyad_1996_2
+while executing---line 2091 of file abntex2-alf.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
++---------------------------------------------------------+
+| Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://www.abntex.net.br/                               |
++---------------------------------------------------------+
+You've used 57 entries,
+            6714 wiz_defined-function locations,
+            1551 strings with 19800 characters,
+and the built_in function-call counts, 52968 in all, are:
+= -- 4357
+> -- 1983
+< -- 283
++ -- 987
+- -- 596
+* -- 3892
+:= -- 6892
+add.period$ -- 184
+call.type$ -- 57
+change.case$ -- 653
+chr.to.int$ -- 125
+cite$ -- 56
+duplicate$ -- 2990
+empty$ -- 3369
+format.name$ -- 2826
+if$ -- 12099
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1038
+newline$ -- 288
+num.names$ -- 280
+pop$ -- 1399
+preamble$ -- 1
+purify$ -- 239
+quote$ -- 0
+skip$ -- 3166
+stack$ -- 1
+substring$ -- 2418
+swap$ -- 1376
+text.length$ -- 68
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 0
+while$ -- 453
+width$ -- 0
+write$ -- 885
+(There were 12 error messages)
