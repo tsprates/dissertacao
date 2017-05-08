@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {1.3}Metodologia}{11}{section.1.3}
 \contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{12}{section.1.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Referencial Te\IeC {\'o}rico}}{13}{chapter.2}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{13}{chapter.2}
 \contentsline {section}{\numberline {2.1}Particle Swarm Optimization}{13}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Descri\IeC {\c c}\IeC {\~a}o do PSO}{14}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Representa\IeC {\c c}\IeC {\~a}o da Part\IeC {\'\i }cula}{16}{subsection.2.1.2}
@@ -28,10 +28,10 @@
 \contentsline {subsection}{\numberline {2.3.2}First Pareto Improvement - FPI}{23}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Neutral Pareto Improvement - NPI}{23}{subsection.2.3.3}
 \contentsline {section}{\numberline {2.4}Minera\IeC {\c c}\IeC {\~a}o de Dados}{24}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Classifica\IeC {\c c}\IeC {\~a}o de Dados}{24}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.1}Classifica\IeC {\c c}\IeC {\~a}o de Dados}{25}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Avalia\IeC {\c c}\IeC {\~a}o da Classifica\IeC {\c c}\IeC {\~a}o de Dados}{27}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{28}{section.2.5}
-\contentsline {section}{\numberline {2.6}Conclus\IeC {\~a}o}{30}{section.2.6}
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{29}{section.2.5}
+\contentsline {section}{\numberline {2.6}Conclus\IeC {\~a}o}{31}{section.2.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {mDPSO - Algoritmo Biobjetivo baseado em PSO para Classifica\IeC {\c c}\IeC {\~a}o de Dados}}{32}{chapter.3}
 \contentsline {section}{\numberline {3.1}Formula\IeC {\c c}\IeC {\~a}o do Problema}{32}{section.3.1}
@@ -44,10 +44,10 @@
 \contentsline {subsection}{\numberline {3.7.1}Opera\IeC {\c c}\IeC {\~a}o de Muta\IeC {\c c}\IeC {\~a}o de Part\IeC {\'\i }cula}{40}{subsection.3.7.1}
 \contentsline {subsubsection}{\numberline {3.7.1.1}Adic\IeC {\~a}o de Novo Termo}{41}{subsubsection.3.7.1.1}
 \contentsline {subsubsection}{\numberline {3.7.1.2}Mudan\IeC {\c c}a de Operador}{41}{subsubsection.3.7.1.2}
-\contentsline {subsubsection}{\numberline {3.7.1.3}Adi\IeC {\c c}\IeC {\~a}o ou Subtra\IeC {\c c}\IeC {\~a}o do Valor N\IeC {\'u}merico}{42}{subsubsection.3.7.1.3}
+\contentsline {subsubsection}{\numberline {3.7.1.3}Adi\IeC {\c c}\IeC {\~a}o ou Subtra\IeC {\c c}\IeC {\~a}o do Valor N\IeC {\'u}merico}{41}{subsubsection.3.7.1.3}
 \contentsline {subsection}{\numberline {3.7.2}Opera\IeC {\c c}\IeC {\~a}o de Recombina\IeC {\c c}\IeC {\~a}o de Part\IeC {\'\i }culas}{42}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}Busca Local Pareto}{43}{section.3.8}
-\contentsline {section}{\numberline {3.9}Conclus\IeC {\~a}o}{45}{section.3.9}
+\contentsline {section}{\numberline {3.8}Busca Local Pareto}{44}{section.3.8}
+\contentsline {section}{\numberline {3.9}Conclus\IeC {\~a}o}{44}{section.3.9}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados Experimentais}}{46}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{46}{section.4.1}
@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {4.4}Conclus\IeC {\~a}o}{58}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{59}{chapter.5}
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{59}{section.5.1}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{60}{section.5.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \contentsline {chapter}{\uppercase {Refer\^encias Bibliogr\'aficas}}{61}{section*.12}
