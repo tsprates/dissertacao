@@ -30,7 +30,7 @@
 \contentsline {section}{\numberline {2.4}Minera\IeC {\c c}\IeC {\~a}o de Dados}{24}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Classifica\IeC {\c c}\IeC {\~a}o de Dados}{25}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}Avalia\IeC {\c c}\IeC {\~a}o da Classifica\IeC {\c c}\IeC {\~a}o de Dados}{27}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{29}{section.2.5}
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{28}{section.2.5}
 \contentsline {section}{\numberline {2.6}Conclus\IeC {\~a}o}{31}{section.2.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {mDPSO - Algoritmo Biobjetivo baseado em PSO para Classifica\IeC {\c c}\IeC {\~a}o de Dados}}{32}{chapter.3}
