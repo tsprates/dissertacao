@@ -5,7 +5,7 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces Exemplo de codifica\IeC {\c c}\IeC {\~a}o de uma part\IeC {\'\i }cula pelo mDPSO e a senten\IeC {\c c}a SQL gerada para avalia\IeC {\c c}\IeC {\~a}o pelo SGBD.}}{35}{figure.3.4}
 \contentsline {figure}{\numberline {5}{\ignorespaces Escolha da part\IeC {\'\i }cula l\IeC {\'\i }der}}{36}{figure.3.5}
 \contentsline {figure}{\numberline {6}{\ignorespaces Exemplo de muta\IeC {\c c}\IeC {\~a}o por adi\IeC {\c c}\IeC {\~a}o de novo termo na regra codificada pela part\IeC {\'\i }cula.}}{41}{figure.3.6}
-\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de muta\IeC {\c c}\IeC {\~a}o por mudan\IeC {\c c}a de operador.}}{42}{figure.3.7}
+\contentsline {figure}{\numberline {7}{\ignorespaces Exemplo de muta\IeC {\c c}\IeC {\~a}o por mudan\IeC {\c c}a de operador.}}{41}{figure.3.7}
 \contentsline {figure}{\numberline {8}{\ignorespaces Exemplo de muta\IeC {\c c}\IeC {\~a}o por mudan\IeC {\c c}a de um novo valor num\IeC {\'e}rico.}}{42}{figure.3.8}
 \contentsline {figure}{\numberline {9}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o do operador de recombina\IeC {\c c}\IeC {\~a}o entre as part\IeC {\'\i }culas implementado pelo mDPSO.}}{43}{figure.3.9}
 \contentsline {figure}{\numberline {10}{\ignorespaces Desempenho dos algoritmos na base de dados {\em Diabetes} utilizando a m\IeC {\'e}trica sensibilidade $\times $ especificidade global.}}{49}{figure.4.10}

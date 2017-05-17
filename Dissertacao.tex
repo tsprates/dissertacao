@@ -385,15 +385,13 @@ Finalmente, no capítulo \ref{ch:cons_finais} são apresentadas as consideraçõ
 
 Neste capítulo é apresentada a fundamentação teórica utilizada no desenvolvimento do presente trabalho. Numa primeira etapa, são apresentados os principais conceitos relacionados a metaheurística {\em Particle Swarm Optimization} (PSO) necessários à compreensão da abordagem proposta. 
 
-Posteriormente, conceitos e definições da área de otimização multiobjetivo serão apresentados, uma vez que são importantes durante a utilização da dominância Pareto pelos componentes {\em gbest} e {\em pbest} do PSO proposto. Conceitos referentes à busca local Pareto também são relacionados, pois são utilizados ao final de cada iteração com intuito de refinar as soluções encontras. 
+Posteriormente, conceitos e definições da área de otimização multiobjetivo serão apresentados, visto que o PSO proposto é um algoritmo multiobjetivo. Conceitos referentes à busca local Pareto também são relacionados, pois são utilizados ao final de cada iteração com intuito de refinar as soluções encontras para implementação da rotina de perturbação das soluções não-dominadas do PSO multiobjetivo. 
 
 Ao final do capítulo são relacionados os principais conceitos e definições referentes às áreas de mineração e classificação de dados, sendo elencados trabalhos relevantes referentes ao tema abordado deste trabalho.
 
 
 \section{Particle Swarm Optimization}
 \label{ch:pso}
-
-O PSO é uma metaheurística relacionada à área dos Algoritmos Evolucionários e inspirada na dinâmica da vida social de pássaros e cardumes de peixes durante a busca por alimentos \cite{Kennedy_1995}.
 
 De acordo \citeonline{Cunha_2014}, a busca por alimentos efetuada de maneira coordenada por sociedades de animais envolve a realização de buscas em espaços de elevada dimensão, sobre funções que não apenas são de elevada complexidade, mas que também exigem uma execução contínua de mecanismos de adaptação. As soluções para tais problemas tratam-se de mecanismos bastante bem sucedidos, utilizadas pelos atuais seres biológicos existentes no planeta, pois permitiram a essas espécies estar hoje presentes após bilhões de anos. Devido a isso, acredita-se que ao emular tais processos, possa-se transpostar o sucesso destes processos na construção de mecanismos computacionais destinados a resolução de problemas de alta complexidade.
  
@@ -409,13 +407,13 @@ Relacionada com os Algoritmos Evolucionários encontra-se a sub-área chamada de
 
 O termo ``enxame'' é utilizado de maneira genérica para se  referir a qualquer coleção estruturada de agentes capazes de interagir \cite{VonZuben_2007}. Alguns exemplos encontrados na literatura baseados em tais conceitos são: a {\em Otimização por Colônia de Formigas} (ACO, do inglês {\em Ant Colony Optimization}) \cite{Dorigo_1996}, {\em OptBees} (Algoritmo Inspirado em Colônias de Abelhas para Otimização em Espaços Contínuos) \cite{Renato_2013}, Algoritmos Imunológicos \cite{Castro_2002}, entre outros. 
 
-Neste contexto, o PSO vem sendo reconhecido por sua eficência quando comparado a outros métodos e técnicas matemáticas encontrados na literatura. Algumas carecterísticas tornam o PSO particulamente interessante, como a utilização de um conceito simples, ser de fácil implementação, tipo de memória inerente, poucos de parâmetros de controle e eficiência computacional quando comparados a outros métodos encontrados na literatura \cite{Valle_2008}. Entre as áreas de aplicação do PSO estão o {\em design} de sistemas, otimização multiobjetivo, classificação de dados, reconhecimento de padrões, modelagem de sistemas biológicos, programação (planejamento), processamento de sinais, jogos, aplicações robóticas, tomada de decisão, simulação e identificação, para citar alguns \cite{Kennedy_2001}.
+Neste contexto, o PSO vem sendo reconhecido por sua eficência quando comparado a outros métodos e técnicas matemáticas encontrados na literatura. Algumas carecterísticas tornam o PSO particulamente interessante, como a utilização de um conceito simples, ser de fácil implementação, tipo de memória inerente, poucos parâmetros de controle e eficiência computacional quando comparados a outros métodos encontrados na literatura \cite{Valle_2008}. Entre as áreas de aplicação do PSO estão o {\em design} de sistemas, classificação de dados, reconhecimento de padrões, modelagem de sistemas biológicos, programação (planejamento), processamento de sinais, jogos, aplicações robóticas, tomada de decisão, simulação e identificação, para citar alguns \cite{Kennedy_2001}.
   
 
 \subsection{Descrição do PSO}
 \label{sec:desc_pso}
 
-O PSO utiliza um enxame de partículas para varrer o espaço de busca na tentativa de encontrar novas soluções para resolução de um problema. Cada partícula do enxame possui dois componentes denominados \textbf{pbest} ({\em personal best}) e \textbf{gbest} ({\em global best}) onde ficam registradas informações acerca das melhores posições (no espaço de busca) encontradas por cada partícula (ou enxame). Enquanto {\em pbest} identifica a melhor posição obtida pela própria partícula, {\em gbest} determina a melhor posição encontrada pelo enxame. Além disso, cada partícula está associada a uma velocidade que determina a intensidade (tamanho) do deslocamento da partícula pelo espaço de busca. 
+O PSO é uma metaheurística relacionada à área dos Algoritmos Evolucionários e inspirada na dinâmica da vida social de pássaros e cardumes de peixes durante a busca por alimentos \cite{Kennedy_1995} e utiliza um enxame de partículas para varrer o espaço de busca na tentativa de encontrar novas soluções para resolução de um problema. Cada partícula do enxame possui dois componentes denominados \textbf{pbest} ({\em personal best}) e \textbf{gbest} ({\em global best}) onde ficam registradas informações acerca das melhores posições (no espaço de busca) encontradas por cada partícula (ou enxame). Enquanto {\em pbest} identifica a melhor posição obtida pela própria partícula, {\em gbest} determina a melhor posição encontrada pelo enxame. Além disso, cada partícula está associada a uma velocidade que determina a intensidade (tamanho) do deslocamento da partícula pelo espaço de busca. 
 
 O PSO, descrito no Algoritmo \ref{alg:pseudo_pso}, funciona da seguinte forma: 
 
@@ -449,7 +447,7 @@ O PSO, descrito no Algoritmo \ref{alg:pseudo_pso}, funciona da seguinte forma:
 \end{algorithmic}
 \end{algorithm}
 
-Para varredura do espaço de busca, a velocidade e a posição de cada partícula são atualizadas em cada iteração do algoritmo. Primeiramente atualiza-se a velocidade da partícula, segundo a Eq. \ref{eq:pso_vel}, e, posteriormente, a posição da partícula é calculada segundo a Eq. \ref{eq:pso_pos}. Esta operação resulta numa nova partícula que identifica uma nova posição no espaço de busca. Conceitualmente, o {\em gbest} e {\em pbest} guiam o processo de convergência do PSO na busca por novas soluções dentro do espaço de busca. 
+Para varredura do espaço de busca, a velocidade e a posição de cada partícula $i$ são atualizadas em cada iteração do algoritmo. Primeiramente atualiza-se a velocidade da partícula, segundo a Eq. \ref{eq:pso_vel}, e, posteriormente, a posição da partícula é calculada segundo a Eq. \ref{eq:pso_pos}. Esta operação resulta numa nova partícula que identifica uma nova posição no espaço de busca. Conceitualmente, o {\em gbest} e {\em pbest} guiam o processo de convergência do algoritmo PSO na busca por novas soluções dentro do espaço de busca. 
 
 \begin{equation}
 \label{eq:pso_vel}
@@ -461,9 +459,9 @@ V^{t+1}_{i} = \omega . V^{t}_{i} + c_1 . rand_1 . (pbest^{t}_{i} - X^{t}_{i}) + 
 X^{t+1}_{i} = X^{t}_{i} + V^{t+1}_{i}
 \end{equation}
 
-Os termos $c_1$ e $c_2$ representam as {\em taxas de aprendizagem} do PSO. Ambos representam, respectivamente, os componentes dos {\em fatores cognitivo} e {\em social} da partícula e determinam o quanto a partícula irá utilizar de sua memória e do conhecimento de todo enxame na geração de novas soluções. $rand_1$ e $rand_2$ são valores aleatórios no intervalo $[0,1]$ que atribuem aleatoriedade ao processo de deslocamento da partícula com objetivo principal de evitar que a partícula fique ``presa'' em um ótimo local.
+Os termos $c_1$ e $c_2$ representam as {\em taxas de aprendizagem} do PSO. Ambos representam, respectivamente, os componentes dos {\em fatores cognitivo} e {\em social} da partícula e determinam o quanto a partícula irá utilizar de sua memória e do conhecimento de todo o enxame na geração de novas soluções. $rand_1$ e $rand_2$ são valores aleatórios no intervalo $[0,1]$ que atribuem aleatoriedade ao processo de deslocamento da partícula com objetivo principal de evitar que a partícula fique ``presa'' em um ótimo local.
 
-A Figura \ref{fig:nova_part} ilustra geometricamente o processo de atualização da posição/velocidade de uma partícula.
+A Figura \ref{fig:nova_part} ilustra geometricamente o processo de atualização da posição/velocidade de uma partícula pelo algoritmo PSO.
 
 \begin{figure}[ht]
 \label{fig:nova_part}
@@ -472,7 +470,7 @@ A Figura \ref{fig:nova_part} ilustra geometricamente o processo de atualização
 \caption{Atualização da posição da partícula no PSO}
 \end{figure}
 
-Outro termo comumente utilizado é a constante $\omega$ ({\em ponderação de inércia}) que tem por objetivo servir como um mecanismo para controlar as capacidades de diversificação e intensificação das partículas do enxame. Basicamente, a ponderação de inércia atribui o quanto da direção de vôo anterior irá influenciar na nova velocidade da partícula numa próxima iteração do PSO \cite{Rini_2011}.
+A constante $\omega$ ({\em ponderação de inércia}) tem por objetivo servir como um mecanismo para controlar as capacidades de diversificação e intensificação das novas partículas geradas pelo algoritmo. Basicamente, a ponderação de inércia atribui o quanto da direção de vôo anterior irá influenciar na nova velocidade da partícula numa próxima iteração do PSO \cite{Rini_2011}.
 
 \subsection{Representação da Partícula}
 \label{sec:repr_part}
@@ -510,20 +508,18 @@ Segundo \citeonline{Wang3_2011}, as aplicações envolvendo algoritmo PSO para p
 \item \textbf{Baseada em permutação}: geralmente as partículas são representadas por uma sequência ordenada de símbolos. Neste modelo, a operação de troca de posições é implementada na busca por novas soluções no PSO.
 \end{itemize}
 
-Alguns trabalhos que envolvem a aplicação do algoritmo PSO em problemas de classificação de dados estão relacionados na seção \ref{sec:trabalhos_relacionados}. Normalmente, os autores adotaram a representação binária na implementação do seu algoritmo, diferentemente da representação desenvolvida neste trabalho que segue a representação baseada em permutação.
+Alguns trabalhos que envolvem a aplicação do algoritmo PSO em problemas de classificação de dados estão relacionados na seção \ref{sec:trabalhos_relacionados}. Normalmente, os autores adotaram a representação binária na implementação do seu algoritmo, diferentemente da representação desenvolvida neste trabalho que segue a representação baseada em permutação, de acordo com a formulação proposta por \citeonline{Pan_2008}.
 
 \subsubsection{PSO Baseado em Permutação}
 \label{sec:atual_part}
 
-No contexto de PSOs baseados em permutação, \citeonline{Pan_2008} propõem uma nova abordagem de PSO e, basicamente, o processo de atualização da posição da partícula envolve os seguintes conceitos, como apresentado na formulação da Eq. \ref{eq:dpso_pos_permut}: 
+No contexto de PSOs baseados em permutação, \citeonline{Pan_2008} propõem uma nova abordagem de PSO. Nesta abordagem, o processo de atualização da posição da partícula, descrito pela fórmula da Eq. \ref{eq:dpso_pos_permut}, envolve os seguintes componentes: 
 
 \begin{equation}
 \label{eq:dpso_pos_permut}
 X^{t}_{i} = c_2 \otimes F_3 (\overbrace{c_1 \otimes F_2 (\underbrace{w \otimes F_1 (X^{t-1}_{i})}_{\lambda},\ pbest^{t-1}_{i})}^{\delta},\ 
 gbest^{t-1})
 \end{equation}
-
-Onde $\lambda$ e $\delta$ são partículas temporárias utilizadas para simplificar o processo de atualização de cada partícula do enxame e $w$, $c_1$ e $c_2$ parâmetros definidos no intervalo $[0,1]$.
 
 \begin{itemize}
 \item O \textbf{primeiro componente} $\lambda = w \otimes F_1(X^{t-1}_{i})$ representa a velocidade da partícula. $F_1$ representa um mecanismo de busca local que ocorre segundo uma probabilidade $r_1$. Deste modo, seja $r_1$ um número aleatório gerado no intervalo de $[0,1]$, se $r_1$ for menor que $w$, então $\lambda  = F_1(X^{t-1}_{i})$. Caso contrário, $\lambda = X^{t-1}_{i}$; 
@@ -533,30 +529,35 @@ Onde $\lambda$ e $\delta$ são partículas temporárias utilizadas para simplifi
 \item O \textbf{terceiro componente} $X^{t}_{i} = c_2 \otimes F_3 (\delta,\ gbest ^{t-1})$ compreende o ``termo social'' do PSO. $F_3$ representa um operador de recombinação em que $\delta ^{t}_{i}$ e $gbest^{t-1}$ representam as soluções pais. Assim, se um número aleatório $r_3$ for menor que o parâmetro $c_2$, então $X^{t}_{i} = c_2 \otimes F_3 (\delta,\ gbest ^{t-1})$. Caso contrário, $X^{t}_{i} = \delta$.
 \end{itemize}
 
-A Eq. \ref{eq:dpso_pos_permut} é implementada pelo Algoritmo \ref{alg:mdpso_atualiza_part}, apresentado na seção \ref{sec:mdpso_atual_pos_part}.
+Onde $\lambda$ e $\delta$ são partículas temporárias utilizadas para simplificar o processo de atualização de cada partícula do enxame e $w$, $c_1$ e $c_2$ são parâmetros definidos no intervalo $[0,1]$.
+
+%A Eq. \ref{eq:dpso_pos_permut} é implementada pelo Algoritmo \ref{alg:mdpso_atualiza_part}, apresentado na seção \ref{sec:mdpso_atual_pos_part}.
+
+O mecanismo de \citeonline{Pan_2008}, implementado pelo PSO proposto neste trabalho e detalhado na seção \ref{sec:mdpso_atual_pos_part}, utiliza uma abordagem semelhante à formulação descrita pela Eq. \ref{eq:dpso_pos_permut}. Adaptações foram necessárias para aplicação do PSO no problema estudado neste trabalho.
+
 
 \subsection{Geração da População Inicial}
 \label{sec:ger_inicial}
 
 Geralmente, as populações iniciais dos algoritmos evolucionários são construídas a partir da geração aleatória dos indivíduos (soluções candidatas) de maneira a constituir uma amostra representativa do espaço de busca. Entretanto, conforme afirmam \citeonline{Haubelt_2005}, despender um esforço inicial na implementação de heurísticas para construção das soluções iniciais de uma população pode auxiliar os algoritmos a convergirem mais rapidamente. 
 
-Diante deste fato, o PSO proposto neste trabalho também implementa uma estratégia para construção do enxame inicial com o objetivo de auxiliar na convergência do algoritmo. A seção \ref{sec:mdpso_ger_inicial} descreve a rotina de geração do enxame inicial implementada pelo algoritmo PSO proposto.
+Diante deste fato, o PSO proposto neste trabalho também implementa uma estratégia para construção do enxame inicial com o objetivo de auxiliar na convergência do algoritmo. A seção \ref{sec:mdpso_ger_inicial} descreve a rotina de geração do enxame inicial implementada pelo PSO proposto neste trabalho.
 
 \subsection{Técnicas de Nicho}
 \label{sec:tec_nicho}
 
 A aplicação de técnicas de nicho pelos algoritmos populacionais consiste na divisão da população de soluções candidatas em diversas subpopulações (nichos). No contexto de problemas de classificação de dados, esta divisão da população em nichos ocorre de maneira que cada subpopulação (nicho) identifique as melhores regras de classificação de determinada classe da base de dados. Especificamente para este tipo de problema, o número de nichos é sempre igual ao número de classes.
 
-Segundo \citeonline{Pereira_2014}, técnicas de nicho são uma funcionalidade importante, pois permitem ao algoritmo obter boas regras para todas as classes do problemas simultaneamente, em uma única execução. Além disso, o custo computacional total é reduzido em comparação com execuções múltiplas de uma versão do algoritmo que implemente uma população de soluções candidatas que descreve uma classe somente.
+Segundo \citeonline{Pereira_2014}, técnicas de nicho são uma funcionalidade importante, pois permitem ao algoritmo obter, simultaneamente, boas regras para as diversas classes do problema, em uma única execução. Além disso, o custo computacional total é reduzido em comparação com execuções múltiplas de uma versão do algoritmo que implemente uma população de soluções candidatas que descrevem uma única classe.
 
 \section{Otimização Multiobjetivo}
 \label{sec:multi_obj}
 
-De acordo \citeonline{Cunha_2014}, muitos problemas encontrados na natureza são modelados como sendo de múltiplos objetivos e neste sentido, diversos esforços têm sido empregados na construção de versões multiobjetivos de Algoritmos Evolucionários para resoluções de tais problemas.
+De acordo \citeonline{Cunha_2014}, muitos problemas encontrados na natureza são modelados como sendo de múltiplos objetivos e neste sentido, diversos esforços têm sido empregados na construção de versões multiobjetivo de Algoritmos Evolucionários para resoluções de tais problemas.
 
-Em problemas multiobjetivo não existe somente uma solução, mas sim um conjunto de soluções. Elas relacionam os ``{\em trade-off}'' entre os objetivos, e portanto, necessitam da utilização de uma noção de otimalidade para identificação destes conjuntos de soluções. 
+Normalmente, em problemas multiobjetivo não existe somente uma solução para o problema, mas sim um conjunto de soluções. Elas relacionam os ``{\em trade-off}'' entre os vários objetivos, e portanto, necessitam da utilização de uma noção de otimalidade para identificação destes conjuntos de soluções. 
 
-Por isso, para problemas multiobjetivo é comum a utilização do conceito de otimalidade proposto por Francis Ysidro Edgeworth (em 1881). Este conceito difundido, posteriormente, por Vilfredo Pareto (em 1896), é denominado de {\em Edgeworth-Pareto ótimo} ou, simplesmente, {\em Pareto ótimo} \cite{Coello_2006}. Neste trabalho, é utilizado pelo PSO proposto na identifição das soluções consideradas ótimas para o problema de classificação do dados.
+Por isso, para problemas multiobjetivo é comum a utilização do conceito de otimalidade proposto por Francis Ysidro Edgeworth (em 1881) para comparação das soluções do problema. Este conceito difundido, posteriormente, por Vilfredo Pareto (em 1896), é denominado de {\em Edgeworth-Pareto ótimo} ou, simplesmente, {\em Pareto ótimo} \cite{Coello_2006}. Neste trabalho, é utilizado pelo PSO proposto na identifição das soluções consideradas ótimas para o problema de classificação de dados.
 
 Normalmente, os problemas multiobjetivo se caracterizam pela maximização (ou minimização) de um vetor de objetivos, sendo descrito por um modelo matemático conforme apresentado na formulação \ref{eq:multi_obj}:
 
@@ -570,9 +571,9 @@ Normalmente, os problemas multiobjetivo se caracterizam pela maximização (ou m
 \textbf{Sujeito a}\ x \in \Omega
 \end{equation}
 
-Tal que $\Omega$ é o espaço de decisões. Sejam  $u = (u_1,u_2,...,u_m)$ e $v = (v_1,v_2,...,v_m)$ tal que $u,v \in \mathbb{R}^m$. Diz-se que $u$ domina $v$, ou $u \prec v$, se $\forall u_i \leq v_i$, para todo $i=1,2,...,m$, e $\exists\ u_i < v_i$, respeitando, se existir, as restrições do problema. Quando $u$ não domina e nem é dominado por $v$, diz-se que ambos $u$ e $v$ não possuem relação de dominância entre si ou são incomparáveis.
+Tal que $\Omega$ é o espaço de decisões. Sejam  $u = (u_1,u_2,...,u_m)$ e $v = (v_1,v_2,...,v_m)$ tal que $u,v \in \mathbb{R}^m$. Diz-se que $u$ domina $v$, ou $u \prec v$, se $\forall u_i \leq v_i$ (minimização), para todo $i=1,2,...,m$, e $\exists\ u_i < v_i$, respeitando, se existir, as restrições do problema. Quando $u$ não domina e nem é dominado por $v$, diz-se que ambos $u$ e $v$ não possuem relação de dominância entre si ou são incomparáveis.
 
-Baseado no conceito de relação de dominância apresentado é possível aplicar a condição de otimalidade em problemas de otimização multiobjetivo. Com isso, a região de soluções viáveis $S$, tal que uma solução $x \in S$, é identificada como {\em Pareto-ótima}, se e somente se, não existir outra solução $x' \in S$ tal que:
+Baseado no conceito de relação de dominância apresentado é possível aplicar a condição de otimalidade em problemas de otimização multiobjetivo. Com isso, a região de soluções viáveis $S$, tal que uma solução $x \in S$, é identificada como {\em Pareto-ótima} ou não-dominada, se e somente se, não existir outra solução $x' \in S$ tal que:
 
 \begin{equation}
 \label{eq:dominancia}
@@ -593,9 +594,9 @@ Quando mapeadas no espaço dos objetivos, as {\em soluções Pareto-ótimas} sã
 \mathcal{PF} = \{ u = \mathcal{F}(x)\ |\ x \in \mathcal{P} \}
 \end{equation}
 
-A tarefa de encontrar a fronteira Pareto exata de um problema de otimização multiobjetivo pode ser difícil. Dessa maneira, são aceitáveis aproximações de uma fronteira Pareto encontradas dentro de um intervalo limitado de processamento computacional \cite{Coello_2006}. Tais soluções devem está o mais próximo da fronteira Pareto real com a maior diversidade possível de amostras. 
+A tarefa de encontrar a fronteira Pareto exata de um problema de otimização multiobjetivo pode ser difícil. Dessa maneira, são aceitáveis aproximações de uma fronteira Pareto encontradas dentro de um intervalo limitado de processamento computacional \cite{Coello_2006}. Tais soluções devem estar o mais próximo da fronteira Pareto real com a maior diversidade possível de amostras. 
 
-A otimização multiobjetivo é uma importante área de pesquisa para cientistas e engenheiros. Técnicas tradicionais de otimização, tais como métodos baseados em gradientes, são difíceis, senão impossíveis, de serem utilizados em verdadeiros problemas de otimização multiobjetivo. Devido a isso, abordagens evolucionárias têm sido desenvolvidas a serem aplicadas em problemas de otimização multiobjetivo \cite{Hu_2003}. 
+A otimização multiobjetivo é uma importante área de pesquisa para cientistas e engenheiros. Técnicas tradicionais de otimização, tais como métodos baseados em gradientes, são difíceis, senão impossíveis, de serem utilizados em verdadeiros problemas de otimização multiobjetivo. Devido a isso, abordagens evolucionárias têm sido desenvolvidas para serem aplicadas na resolução de problemas de otimização multiobjetivo \cite{Hu_2003}. 
 
 A classificação de dados por meio de extração de regras, tema deste trabalho, é formulada como um problema de otimização. Conforme afirma \citeonline{Liu_2004}, problemas de otimização multiobjetivo podem ser reduzidos à problemas de classificação de dados, cujo objetivo principal é encontrar regras de classificação com alta precisão, generalização e compreensão. 
 
@@ -605,14 +606,14 @@ A classificação de dados por meio de extração de regras, tema deste trabalho
 
 A relativa simplicidade do PSO, em conjunto com suas técnicas de compartilhamento de informação, tornaram-o um candidato natural para desenvolvimento de uma variante do PSO para aplicação em problemas de natureza multiobjetivo \cite{Mishra_2016}. Entretanto, apesar do PSO se mostrar particularmente adequado à abordagem multiobjetivo, devido ao seu poder de convergência para problemas mono-objetivo \cite{Coello_2004}, parece que ainda não há um consenso acerca da melhor forma de representação dos componentes {\em gbest} e {\em pbest} no contexto multiobjetivo \cite{Reddy_2007}. 
 
-Cabe ressaltar que, na versão mono-objetivo do PSO, os componentes {\em pbest} e {\em gbest} representam uma solução somente. Porém, no contexto da otimização multiobjetivo, a representação de {\em pbest} e {\em gbest} é uma questão a ser analisada, visto que os tais componentes passam a se comportar como um repositório, contendo inúmeras soluções não-dominadas.
+Cabe ressaltar que, na versão mono-objetivo do PSO, os componentes {\em pbest} e {\em gbest} representam uma solução somente. Porém, no contexto da otimização multiobjetivo, a representação de {\em pbest} e {\em gbest} é uma questão a ser analisada, visto que tais componentes passam a se comportar como um repositório, contendo inúmeras soluções não-dominadas.
 
 \section{Busca Local Pareto}
 \label{sec:busca_local_pareto}
 
 Os mecanismos de busca local são conhecidos pela sua eficiência em várias situações práticas, especialmente em problemas combinatórios complexos \cite{Basseur_2007}. A introdução destes mecanismos em algoritmos multiobjetivo é relativamente comum uma vez que eles possibilitam a esses algoritmos convergirem mais rapidamente e com mais precisão em direção à fronteira Pareto \cite{Joao_2013}.
 
-Normalmente, estes mecanismos tentam aprimorar, iterativamente, uma solução $s$ através de sucessivas substituições da solução corrente por uma solução melhor (solução mutante) encontrada na vizinhança da solução $s$. A vizinhança de uma solução $s$, representada por $\mathcal{N}(s)$, compreende o conjunto de soluções (chamados vizinhos) que podem ser alcançados a partir de $s$ através de modificações ou perturbações (operações de {\em move}) na solução corrente $s$ \cite{Zachariadis_2010}.
+Normalmente, estes mecanismos tentam aprimorar, iterativamente, uma solução $s$ através de sucessivas substituições da solução corrente por uma solução melhor (solução mutante) encontrada na vizinhança da solução $s$. A vizinhança de uma solução $s$, representada por $\mathcal{N}(s)$, compreende ao conjunto de soluções (chamados vizinhos) que podem ser alcançados a partir de $s$ através de modificações ou perturbações (operações de {\em move}) na solução corrente $s$ \cite{Zachariadis_2010}.
 
 Os algoritmos de {\em busca local Pareto} (PLS, {\em Pareto Local Search}) são técnicas de busca local nas vizinhanças de uma solução para resolução de problemas de otimização combinatorial multiobjetivo. As PLSs aplicam uma estratégia de exploração iterativa em um conjunto de soluções, objetivando obter consequentemente novas soluções não-dominadas, a partir de pesquisas nas vizinhanças de cada solução do conjunto \cite{Drugan_2012}. 
 
@@ -620,7 +621,7 @@ Os métodos de busca local Pareto propostos por  \citeonline{Drugan_2012} são d
 
 \subsection{Best Pareto Improvement - BPI} 
 
-Descrito no Algoritmo \ref{alg:BPI}, o {\em Best Pareto Improvement} (BPI) varre toda a vizinhança da solução $s$. O conjunto de soluções $A’$, retornado pela rotina, contém as soluções encontradas nas vizinhanças $\mathcal{N}(s)$ que dominam ou são incomparáveis com as soluções do conjunto $\{s\} \cup A$. 
+Descrito no Algoritmo \ref{alg:BPI}, o {\em Best Pareto Improvement} (BPI) varre toda a vizinhança da solução $s$. O conjunto de soluções $A’$ contém as soluções encontradas na vizinhança $\mathcal{N}(s)$ que dominam ou são incomparáveis com as soluções do conjunto $\{s\} \cup A$. 
 
 O parâmetro {\em visited} identifica se a vizinhança de determinada solução já foi examinada anteriormente pelo método ({\em visited} = TRUE) ou não ({\em visited} = FALSE). O atributo {\em visited} de cada solução é inicializado com valor FALSE.
 
@@ -703,7 +704,6 @@ O termo mineração de dados foi cunhado em alusão ao processo de mineração, 
 
 Diversas tentativas têm sido utilizadas na aplicação de algoritmos evolucionários para a realização das tarefas de mineração de dados. Neste contexto, o PSO se apresenta como uma ferramenta promissora na aplicação em problemas de mineração de dados devido a sua facilidade de implementação e poucos parâmetros a serem ajustados \cite{Wang_2007}, sendo considerado um método robusto à resolução de problemas não-lineares, não-integráveis, multimodais e de alta dimensionalidade \cite{Krohling_2004}. 
 
-%Além disso, o PSO é aplicado com sucesso na resolução de diversos problemas, tais como: modelagem de sistemas biológicos, roteamento, processamento de sinal, robótica, entre outros \cite{Eberhart_2001}. 
 
 \subsection{Classificação de Dados}
 \label{sec:classif_dados}
@@ -716,13 +716,13 @@ Cabe observar que a obtenção de regras com alto grau de precisão na etapa de 
 
 Deste modo, buscar um conjunto de regras que seja o mais simples (com menor número de termos) também é um objetivo normalmente explorado por alguns algoritmos que abordam o problema de classificação de dados (\citeonline{Pereira_2014}, \citeonline{Liu_2004}, \citeonline{Sousa_2004}, etc).
 
-Na Figura \ref{fig:modeloPSO} é ilustrado o processo de classificação de dados através de conjunto de regras {\em SE-ENTÃO}: 
+A Figura \ref{fig:modeloPSO} ilustra as diversas etapas presentes no processo de classificação de dados através de conjunto de regras {\em SE-ENTÃO}: 
 
 \begin{enumerate}[label={(\roman*)}]
-\item Coleta de dados;
-\item São extraídas as regras de classificação durante a fase de treinamento;
-\item Constrói-se o modelo de classificação;
-\item Novas amostras são classificadas na fase de teste.
+\item Fase de coleta de dados;
+\item Extração das regras de classificação que ocorre durante a fase de treinamento;
+\item Construção do modelo de classificação;
+\item Classificação de novas amostras que ocorre na fase de testes.
 \end{enumerate}
 
 \begin{figure}[ht]
@@ -759,7 +759,7 @@ A classificação de dados por meio de extração de regras estudada neste traba
 \subsection{Avaliação da Classificação de Dados}
 \label{sec:aval_fit}
 
-Entende-se como ``qualidade'' de uma regra a capacidade em classificar corretamente o maior número de padrões (ou registros) de um banco de dados. Diversas formas de se medir a qualidade de uma regra de classificação, sendo que as mais comuns se baseiam em cálculos realizados a partir dos coeficientes da matriz de confusão (Ver Tabela \ref{tab:matriz_confusao}) \cite{Pereira_2012}.
+Entende-se como ``qualidade'' de uma regra a capacidade em classificar corretamente o maior número de padrões (ou registros) de um banco de dados. Existem diversas formas de se medir a qualidade de uma regra de classificação, sendo que as mais comuns se baseiam em cálculos realizados a partir dos coeficientes da matriz de confusão (Ver Tabela \ref{tab:matriz_confusao}) \cite{Pereira_2012}.
 
 % http://tex.stackexchange.com/questions/9253/slashbox-alternative
 \begin{table}[!ht]
@@ -770,7 +770,7 @@ Entende-se como ``qualidade'' de uma regra a capacidade em classificar corretame
     >{\hsize=.33 \hsize}X|
   	}
  	\hline \diagbox[width=12.8em]{ \textbf{Real} }{ \textbf{Classif.} } & \textbf{Positivo} & \textbf{Negativo} \\
- 	  \hline \textbf{Positivo} & {\em Verdadeiro Positivo} (VP) & {\em Falso Negativo} (FN) \\
+ 	\hline \textbf{Positivo} & {\em Verdadeiro Positivo} (VP) & {\em Falso Negativo} (FN) \\
     \hline \textbf{Negativo} & {\em Falso Positivo} (FP)      & {\em Verdadeiro Negativo} (VN) \\
  	\hline 
 	\end{tabularx}
@@ -778,7 +778,7 @@ Entende-se como ``qualidade'' de uma regra a capacidade em classificar corretame
 	\label{tab:matriz_confusao}
 \end{table}
 
-Os coeficientes presentes na matriz permitem o cálculo de importantes métricas para averiguar o desempenho dos classificadores. São exemplos: a {\em acurácia} (Eq. \ref{eq:acuracia}), {\em sensibilidade} (Eq. \ref{eq:sensibilidade}) e {\em especificidade} (Eq. \ref{eq:especificidade}), dentre outras. Para o problema investigado neste trabalho:
+Os coeficientes presentes na matriz permitem o cálculo de importantes métricas para averiguar o desempenho dos classificadores. São exemplos: a {\em acurácia} (Eq. \ref{eq:acuracia}), {\em sensibilidade} (Eq. \ref{eq:sensibilidade}) e {\em especificidade} (Eq. \ref{eq:especificidade}), dentre outras:
 
 \begin{equation}
 \label{eq:acuracia}
@@ -798,13 +798,13 @@ Especificidade = \frac{VN}{VN + FP}
 Onde:
 
 \begin{itemize}
-\item \textbf{Verdadeiros positivos} (VP): total de registros (ou tuplas) recuperados do banco de dados utilizando a regra codificada pela partícula nas quais os respectivos registros coincidem com a classe predita pela partícula; 
+\item \textbf{Verdadeiros positivos} (VP): total de registros (ou tuplas) recuperados do banco de dados utilizando a regra codificada nas quais os respectivos registros coincidem com a classe predita; 
 
-\item \textbf{Falsos positivos} (FP): total de registros recuperados pela regra e que não pertecem a classe predita pela partícula;
+\item \textbf{Falsos positivos} (FP): total de registros recuperados pela regra e que não pertecem a classe predita;
 
-\item \textbf{Verdadeiros negativos} (VN): total de registros que não são cobertas pela regra e que não pertença à classe da partícula; 
+\item \textbf{Verdadeiros negativos} (VN): total de registros que não são cobertas pela regra e que não pertença à classe; 
 
-\item \textbf{Falsos negativos} (FN): total de registros que não foram obtidas pela regra, mas que pertencem à classe predita pela partícula.
+\item \textbf{Falsos negativos} (FN): total de registros que não foram obtidas pela regra, mas que pertencem à classe predita.
 \end{itemize}
 
 \section{Trabalhos Relacionados}
@@ -840,7 +840,7 @@ Finalmente, cabe também mencionar o trabalho de \citeonline{Pereira_2012} que s
 
 Neste capítulo, foram apresentados os principais conceitos e definições relacionados ao PSO. Fez-se uma descrição de suas características principais, ressaltando suas funcionalidades e aplicações. Em seguida, foram relacionadas variantes do PSO destinadas ao ambiente combinatorial e as estratégias de geração do enxame inicial e técnicas de nicho.
 
-Conceitos relacionados a otimização multiobjetivo, busca local Pareto e mineração de dados (classificação de dados), bem como a apresentação de estudos relevantes que serviram de referência para este trabalhos também foram apresentados. Nota-se que ainda existem poucos os que utilizam o PSO para a classificação de dados por meio da extração de regras. Não foi encontrado nenhum trabalho de classificação de dados baseado em PSO utilizando a formulação proposta por \citeonline{Pan_2008}, o que torna o presente trabalho inovador neste sentido.
+Conceitos relacionados a otimização multiobjetivo, busca local Pareto e mineração de dados (classificação de dados), bem como a apresentação de estudos relevantes que serviram de referência para este trabalho também foram apresentados. Nota-se que ainda existem poucos que utilizam o PSO para a classificação de dados por meio da extração de regras. Não foi encontrado nenhum trabalho de classificação de dados baseado em PSO utilizando a formulação proposta por \citeonline{Pan_2008}, o que torna o presente trabalho inovador neste sentido.
 
 % ---------
 % Proposta 
@@ -880,14 +880,14 @@ f_1(I,X) = sensibilidade \times especificidade
 f_2(I,X) = \frac{1}{número\ de\ termos}
 \end{equation}
 
-De acordo com \citeonline{Pereira_2012}, o produto da sensibilidade pela especificidade apresenta propriedades interessantes, pois tende a evitar o {\em overfitting}, já que busca reduzir, ou até mesmo eliminar, a tendência de privilegiar as classes predominantes presentes em bancos de dados desbalanceados. Dessa maneira, se a regra apresentar um desempenho muito baixo em relação a um dos valores da sensibilidade ou da especificidade, o valor do {\em fitness} da partícula também será baixo, independente do outro indicador. A função {\em fitness} é penalizada por regras incapazes de identificar os padrões corretos, pois uso da acurácia pode resultar em um valor alto mesmo que o número de {\em verdadeiro positivos} (VP) seja alto e o valor de {\em verdadeiro negativo} (VN) próximo a zero. 
+De acordo com \citeonline{Pereira_2012}, o produto da sensibilidade pela especificidade apresenta propriedades interessantes, pois tende a evitar o {\em overfitting}, já que busca reduzir, ou até mesmo eliminar, a tendência de privilegiar as classes predominantes presentes em bancos de dados desbalanceados. Dessa maneira, se a regra apresentar um desempenho muito baixo em relação a um dos valores da sensibilidade ou da especificidade, o valor do {\em fitness} da partícula também será baixo, independente do outro indicador. A função {\em fitness} é penalizada por regras incapazes de identificar os padrões corretos, pois uso da acurácia pode resultar em um valor alto, mesmo que o número de {\em verdadeiro positivos} (VP) seja alto e o valor de {\em verdadeiro negativo} (VN) seja próximo de zero. 
 
 \section{Descrição do mDPSO}
 \label{sec:desc_mdpso}
 
 O objetivo do mDPSO é extrair um conjunto de regras durante as fases de treinamento para avaliar seu desempenho em novas amostras, desconhecidas durante a tarefa de treinamento, na fase de teste.
 
-A abordagem Michigan foi utilizada para representação das partícula do mDPSO. Dessa maneira, cada partícula codifica apenas uma regra do problema, o que significa dizer que cada partícula provê uma solução possível para determinada classe e não uma solução geral para todo o problema. 
+A abordagem Michigan foi utilizada para representação das partículas do mDPSO. Dessa maneira, cada partícula codifica apenas uma regra do problema, o que significa dizer que cada partícula provê uma solução possível para determinada classe e não uma solução geral para todo o problema. 
 
 O mDPSO, descrito no Algoritmo \ref{alg:pseudo_mdpso}, implementa um conjunto de particularidades que o distinguem das demais implementações (variantes) da metaheuristica PSO encontradas na literatura. São funcionalidades adaptadas, implementadas pelo mDPSO:
 
@@ -922,7 +922,7 @@ O mDPSO, descrito no Algoritmo \ref{alg:pseudo_mdpso}, implementa um conjunto de
 \caption{Avaliação de aptidão ({\em fitness}) de cada partícula no mDPSO}
 \label{alg:pseudo_mdpso_aval}
 \begin{algorithmic}[1]
-\INPUT{$p.pbest$ - Soluções não-dominadas encontradas pela partícula $p$; $C_k.gbest$ - Soluções não-dominadas do nicho $C_k$}.
+\INPUT{$p.pbest$ - Soluções não-dominadas encontradas pela partícula; $C_k.gbest$ - Soluções não-dominadas do nicho $C_k$}.
   \For{cada partícula $p$ do enxame}
       \State Avaliar $p$;
       \State $C_k.gbest \leftarrow merge(C_k.gbest, \{p\})$;
@@ -948,7 +948,7 @@ A representação adotada para cada partícula do mDPSO é ilustrada na Figura \
 
 Na avaliação da aptidão ({\em fitness}) da partícula no PSO, esse vetor de termos é convertido em um predicado lógico da claúsula WHERE de uma sentença SQL executada em um Sistema de Gerenciamento de Banco de Dados (SGBD) que retorna os registros (tuplas) que atendem à cláusula WHERE. 
 
-De posse dos registro retornados é feita a avaliação do desempenho da regra da partícula. A Figura \ref{fig:representacao} ilustra o processo de conversão da regra da partícula em uma setença SQL. 
+De posse dos registros retornados é feita a avaliação do desempenho da regra codificada na partícula.
 
 \begin{figure}[ht]
 \centering
@@ -962,9 +962,9 @@ De posse dos registro retornados é feita a avaliação do desempenho da regra d
 
 Um ponto importante no mDPSO refere-se aos componentes {\em gbest} e {\em pbest}. Em versões multiobjetivo do PSO, ambos {\em gbest} e {\em pbest} passam a atuar como repositórios de soluções não-dominadas, ao contrário da versão mono-objetivo, em que ambas se referem somente à melhor posição obtida pela partícula ({\em pbest}) e a melhor posição obtida pelo enxame ({\em gbest}).
 
-O mDPSO implementa o {\em gbest} através de um repositório de soluções não-dominadas para cada nicho (classe) do problema  ($C_k.gbest$). Além disso, o mDPSO também representa o {\em pbest} de cada partícula como um repositório de soluções não-dominadas.  
+O mDPSO implementa o {\em gbest} através de um repositório de soluções não-dominadas para cada nicho (classe) do problema  ($C_k.gbest$). De forma semelhante, o mDPSO também representa o {\em pbest} de cada partícula como um repositório de soluções não-dominadas.  
 
-Geralmente, o PSO implementa o conceito de partícula líder, que é utilizada na atualização das posições das partículas do enxame, isto é, uma solução que contribui no direcionamento do enxame dentro do espaço de busca. Nas versões mono-objetivo a partícula líder é o próprio {\em gbest}, sendo por isso necessário a proposição de um mecanismo de identificação da partícula líder em abordagens multiobjetivo, visto que, neste contexto, tanto o {\em gbest} quanto {\em pbest} são representadas por um repositório (conjunto) de soluções não-dominadas. 
+Geralmente, o PSO implementa o conceito de partícula líder, que é utilizada na atualização das posições das partículas do enxame, isto é, uma solução que contribui no direcionamento do enxame dentro do espaço de busca. Nas versões mono-objetivo a partícula líder é o próprio {\em gbest}, sendo por isso necessária a proposição de um mecanismo de identificação da partícula líder em abordagens multiobjetivo, visto que, neste contexto, tanto o {\em gbest} quanto {\em pbest} são representadas por um repositório (conjunto) de soluções não-dominadas. 
 
 O processo de identificação da partícula líder ({\em gbest} ou {\em pbest}), necessária à recombinação no mDPSO durante a operação de atualização da posição de cada partícula, ocorre da seguinte maneira: (i) Determina-se a distância euclidiana no plano dos objetivos da partícula corrente em relação aos repositórios {\em gbest} ou {\em pbest}; (ii) A partícula mais próxima da partícula corrente em cada repositório é selecionada para atualização da sua posição durante a recombinação. 
 
@@ -977,7 +977,6 @@ A escolha da partícula não-dominada  mais próxima da partícula corrente na r
 \label{fig:sel_lider}
 \end{figure}
 
-
 Tal abordagem é implementada pelo algoritmo de recrutamento de abelhas {\em OptBees} \cite{Renato_2012}. O {\em OptBees} é um algoritmo aplicado na resolução de problemas de otimização em espaços contínuos, sendo inspirado no comportamento das abelhas durante o forrageamento e em mecanismos envolvidos no processo de alocação de tarefas da vida em sociedade do enxame. É importante também frisar que tal abordagem pode ser aplicada tanto em problemas de maximização quanto de minimização.
 
 Cabe também ressaltar que ao final de cada iteração do mDPSO, com o objetivo de refinar ou aprimorar as soluções encontradas até aquela iteração, é proposta uma busca local Pareto (Ver seção \ref{sec:mdpso_busca_local}) no repositório {\em gbest} de cada nicho.
@@ -988,7 +987,7 @@ Cabe também ressaltar que ao final de cada iteração do mDPSO, com o objetivo 
 O mDPSO implementa uma rotina para geração inicial do seu enxame de partículas. A rotina proposta, descrita pelo Algoritmo \ref{alg:mdpso_ger_inicial}, funciona em duas etapas: (i) Primeiramente, aplica-se técnicas de nicho (Ver seção \ref{sec:tec_nicho}) para dividir o enxame segundo o número de classes do problema; (ii) Gera-se a regra de cada partícula do enxame. 
 
 \begin{algorithm}[ht]
-\caption{Geração do Enxame Inicial no mDPSO}
+\caption{Geração do Enxame Inicial}
 \label{alg:mdpso_ger_inicial}
 \begin{algorithmic}[1]
 \INPUT{$N$ - Número de partículas do enxame;}.
@@ -1006,13 +1005,13 @@ O mDPSO implementa uma rotina para geração inicial do seu enxame de partícula
 \end{algorithmic}
 \end{algorithm}
 
-A fase de construção (linha 7 do Algoritmo \ref{alg:mdpso_ger_inicial}) da regra de cada partícula se resume a definir os $\eta$ termos que entrarão na composição da regra associada à partícula. $\eta$ é um número aleatório inteiro no intervalo $[1, \  \ceil[\big]{\log{(rand_{[1, N]})}}]$, onde $N$ o total de atributos da base de dados. Esta metodologia tem por objetivo simplicar as regras introduzidas na codificação da partícula.
+A fase de geração (linha 7 do Algoritmo \ref{alg:mdpso_ger_inicial}) da regra de cada partícula se resume a definir os $\eta$ termos que entrarão na composição da regra associada à partícula. $\eta$ é um número aleatório inteiro no intervalo $[1, \  \ceil[\big]{\log{(rand_{[1, N]})}}]$, onde $N$ o total de atributos da base de dados. Esta metodologia visa simplificar as regras introduzidas na codificação da partícula explorando imediatamente um dos objetivos do problema proposto neste trabalho.
  
 A seleção dos atributos que compõem cada termo da regra é feita de forma aleatoria a partir dos atributos presentes na base de dados. O operador relacional associado à cada termo da regra é escolhido do conjunto de operadores presentes na Tabela \ref{tab:prob_operadores}. Neste trabalho, foram atribuídas probabilidades de seleção distintas para alguns operadores. Estes valores (taxas de probabilidades) foram obtidos a partir de experimentos computacionais, e mostram relevância diferenciada entre os operadores.
 
 Neste processo, observou-se que os termos das regras eram, em sua maioria, formulados com a seguinte estrutura: \textit{<atributo, operador, valor numérico>}. No entanto, termos com estrutura do tipo \textit{<atributo, operador, outro atributo>}, apesar de menos frequentes, também poderiam contribuir na construção de regras eficazes e mais flexíveis. Deste modo, por meio de experimentos computacionais, definiu-se que termos com a estrutura \textit{<atributo, operador, valor numérico>} (\textit{<atributo, operador, outro atributo}>) teriam probabilidade de 90\% (10\%) de serem adicionados à regra das partículas.
 
-É importante mencionar que em situações específicas, boas regras de classificação com termos com estrutura do tipo \textit{<atributo, operador, outro atributo>}, também facilitariam a adição de outros operadores lógicos ou mesmo funções de comparações topológicas (Ex. {\em contains}, {\em covers}, {\em crosses}, {\em disjoint}, {\em equals}, {\em touches}, {\em within} e {\em distance}, etc.) utilizadas em bancos de dados híbridos (geográficos), que promovem geralmente a comparação entre atributos.
+É importante mencionar que em situações específicas, boas regras de classificação com termos com estrutura do tipo \textit{<atributo, operador, outro atributo>}, facilitariam a adição de outros operadores lógicos ou mesmo funções de comparações topológicas (Ex. {\em contains}, {\em covers}, {\em crosses}, {\em disjoint}, {\em equals}, {\em touches}, {\em within} e {\em distance}, etc.) utilizadas em bancos de dados híbridos (geográficos), que, geralmente, promovem a comparação entre atributos distintos da base de dados.
 
 \begin{table}[ht] % !htbp 
 \setlength{\arrayrulewidth}{.2em}
@@ -1034,16 +1033,16 @@ A Tabela \ref{tab:prob_operadores} também é utilizada pela rotina de mutação
 \section{Operador de Turbulência}
 \label{sec:mdpso_oper_turb}
 
-Muitos autores citam a importância do operador de turbulência em razão de promover a diversidade do enxame no PSO \cite{Parsopoulos_2008}, visto que a diversidade do enxame é importante para melhorar a capacidade exploratória do algoritmo PSO \cite{Reyes_2006}. Como afirmam \citeonline{Santana_2009}, o PSO mono-objetivo apresenta rápida convergência quando comparado a outros métodos, contudo, tal vantagem pode ser também prejudicial no contexto de otimização multiobjetivo, já que o algoritmo tende a convergir prematuramente à um ótimo-local.
+Muitos autores citam a importância do operador de turbulência em razão de promover a diversidade do enxame no PSO \cite{Parsopoulos_2008}, visto que a diversidade do enxame é importante para melhorar a capacidade exploratória do algoritmo \cite{Reyes_2006}. Como afirmam \citeonline{Santana_2009}, o PSO mono-objetivo apresenta rápida convergência quando comparado a outros métodos, contudo, tal vantagem pode ser também prejudicial no contexto de otimização multiobjetivo, já que o algoritmo tende a convergir prematuramente à um ótimo-local.
 
-Para tentar atenuar tal efeito, o mDPSO utiliza um esquema adaptada do trabalho de  \citeonline{Reyes_2005}. Nesta proposta, cada nicho é subdividido em três subpopulações $C_1, C_2$ e $C_3$ de mesmo tamanho, de modo que cada subpopulação $C_i \ (i=1,2,3)$ pode, ou não, ser perturbada, via operador de mutação a fim de promover diversidade no enxame. Para isso utiliza a seguinte estratégia: (i) A subpopulação $C_1$ não sofre nenhuma operação de mutação; (ii) a mutação uniforme é aplicado nas partículas presentes em $C_2$; e (iii) a mutação não-uniforme é aplicada nas partículas da subpopulação $C_3$. Como alternativa à mutação não-uniforme é utilizado a mutação gaussiana \cite{Higashi_2003}. 
+Para tentar atenuar tal efeito, o mDPSO utiliza um esquema adaptado do trabalho de  \citeonline{Reyes_2005}. Nesta proposta, cada nicho é subdividido em três subpopulações $C_1, C_2$ e $C_3$ de mesmo tamanho, de modo que cada subpopulação $C_i \ (i=1,2,3)$ pode, ou não, ser perturbada, via operador de mutação a fim de promover diversidade no enxame. Para isso utiliza a seguinte estratégia: (i) A subpopulação $C_1$ não sofre nenhuma operação de mutação; (ii) a mutação uniforme é aplicado nas partículas presentes em $C_2$; e (iii) a mutação não-uniforme é aplicada nas partículas da subpopulação $C_3$. Como alternativa à mutação não-uniforme é utilizado a mutação gaussiana \cite{Higashi_2003}. 
 
-Na seção \ref{sec:mdpso_mutacao} são apresentadas as mutações implementadas pelo mDPSO.
+Na subseção \ref{sec:mdpso_mutacao} são detalhados os mecanismos de mutação implementados pelo mDPSO.
 
 \section{Atualização da Posição da Partícula}
 \label{sec:mdpso_atual_pos_part}
 
-A rotina de atualização da posição da partícula desenvolvida pelo mDPSO é descrita pelo Algoritmo \ref{alg:mdpso_atualiza_part}. O mecanismo é uma adaptação da formulação proposta pelo trabalho de \citeonline{Pan_2008} descrito na seção \ref{sec:atual_part}, sendo utilizados operadores de mutação e recombinação específicos ao problema de classificação de dados. 
+A rotina de atualização da posição da partícula desenvolvida pelo mDPSO é descrita pelo Algoritmo \ref{alg:mdpso_atualiza_part}. O mecanismo é uma adaptação da formulação proposta pelo trabalho de \citeonline{Pan_2008}, descrita na subseção \ref{sec:atual_part}, sendo utilizados operadores de mutação e recombinação específicos ao problema de classificação de dados. 
 
 \begin{algorithm}[ht]
 \caption{Atualização da posição da partícula}
@@ -1072,11 +1071,11 @@ A rotina de atualização da posição da partícula desenvolvida pelo mDPSO é 
 \end{algorithmic}
 \end{algorithm}
 
-Algumas observações acerca do Algoritmo \ref{alg:mdpso_atualiza_part}:
+Algumas observações acerca deste mecanismo implementado pelo mDPSO:
 
 \begin{itemize}
-\item A busca local na regra da partícula (linha 2) é implementada como uma operação de mutação no mDPSO (Ver seção \ref{sec:mdpso_mutacao});
-\item A operação de recombinação (linhas 7 e 12), descrita na seção \ref{sec:mdpso_recomb_part}, ocorre somente entre partículas pertencentes a uma mesma classe (nicho).
+\item A busca local na regra da partícula (linha 2) é implementada como uma operação de mutação no mDPSO (Ver subseção \ref{sec:mdpso_mutacao});
+\item A operação de recombinação (linhas 7 e 12), descrita na subseção \ref{sec:mdpso_recomb_part}, ocorre somente entre partículas pertencentes a uma mesma classe (nicho).
 \end{itemize}
 
 Ao analisar o Algoritmo \ref{alg:mdpso_atualiza_part} observa-se um paralelo entre a Eq. \ref{eq:pso_vel}, a equação de atualização da partícula implementada pelo PSO original, e a Eq. \ref{eq:paralelo_pso_vel} que corresponde à formulação proposta por \citeonline{Pan_2008}:
@@ -1093,7 +1092,7 @@ Existem discussões acerca do mecanismo de atualização da posição da partíc
 
 De acordo \citeonline{Cunha_2014}, para cada problema podem existir várias representações computacionais às suas resoluções, sendo normalmente necessário efetuar uma análise experimental para encontrar perturbações (mutações) aceitáveis. 
 
-Dessa forma, no decorrer do desenvolvimento deste trabalho, foram propostos três mecanismos de mutação nas regras das partículas objetivando garantir (ou mesmo introduzir) diversidade no enxame de partículas no mDPSO. A rotina de mutação implementada pelo mDPSO é detalhada no Algoritmo \ref{alg:mut}.
+Dessa forma, no decorrer do desenvolvimento deste trabalho, foram propostos três mecanismos de mutação nas regras das partículas objetivando garantir (ou mesmo introduzir) diversidade no enxame de partículas do mDPSO. A rotina de mutação implementada pelo mDPSO é detalhada no Algoritmo \ref{alg:mut}.
 
 \begin{algorithm}[ht]
 \caption{Mutação}
@@ -1123,9 +1122,9 @@ Dessa forma, no decorrer do desenvolvimento deste trabalho, foram propostos trê
 \end{algorithmic}
 \end{algorithm}
 
-O parâmetro $N(0, \sigma)$ refere-se a uma amostra de uma distribuição normal (gaussiana) de média igual a 0 e desvio padrão $\sigma$. $U{(0, 1)}$ corresponde a um valor aleatório no intervalo $[0,1]$ de uma distribuição uniforme.
+O parâmetro $N(0, \sigma)$ refere-se a uma amostra de uma distribuição normal (gaussiana) de média 0 e desvio padrão $\sigma$. $U{(0, 1)}$ corresponde a um valor aleatório no intervalo $[0,1]$ de uma distribuição uniforme.
 
-É importante destacar que o algoritmo não implementa nenhum mecanismo de mutação que altere o rótulo (nicho) das partículas. Os três tipos de mutação nas regras das partículas implementados pelo mDPSO são detalhados nas seções \ref{sec:mdpso_mut1}, \ref{sec:mdpso_mut2} e \ref{sec:mdpso_mut3}.
+É importante destacar que o algoritmo não implementa nenhum mecanismo de mutação que altere o rótulo (nicho) das partículas. Os três tipos de mutação nas regras das partículas implementados pelo mDPSO são detalhados em \ref{sec:mdpso_mut1}, \ref{sec:mdpso_mut2} e \ref{sec:mdpso_mut3}.
 
 \subsubsection{Adicão de Novo Termo}
 \label{sec:mdpso_mut1} 
@@ -1160,9 +1159,9 @@ Outro tipo de mutação implementado pelo mDPSO, ilustrado na Figura \ref{fig:mu
 
 Esse tipo de mutação ocorre somente quando o termo da regra apresenta  estrutura do tipo: \textit{<atributo, operador, valor numérico>}. Em resumo, este operador tem o seguinte funcionamento: (i) É selecionado aleatoriamente um termo da regra codificada na partícula; (ii) É adicionado ou subtraído um valor do terceiro elemento do termo ({valor númerico}). 
 
-O valor da perturbação, a ser adicionado ou subtraído do elemento ``valor numérico'' no termo da regra pode ser obtido de duas formas distintas, baseado no trabalho de \citeonline{Jancauskas_2014}: (i) Valor aleatório gerado segundo uma distribuição uniforme (linha 12 do Algoritmo \ref{alg:mut}); (ii) Valor aleatório gerado segundo uma distribuição normal (gaussiana) (linha 9 do Algoritmo \ref{alg:mut}).
+O valor da perturbação, a ser adicionado ou subtraído do elemento ``valor numérico'' no termo da regra pode ser obtido de duas formas distintas, baseado no trabalho de \citeonline{Jancauskas_2014}: (i) Valor aleatório gerado segundo uma distribuição uniforme (linha 12 do Algoritmo \ref{alg:mut}); (ii) Valor aleatório gerado segundo uma distribuição normal (gaussiana) (linha 8 do Algoritmo \ref{alg:mut}).
 
-O funcionamento deste operador de mutação proposto é ilustrado na Figura \ref{fig:mut_3}: ``NovoValor7'' refere-se ao valor resultante da adição/substração de um valor numério ``Valor7'' em um termo da regra.
+O funcionamento do operador de mutação proposto é ilustrado na Figura \ref{fig:mut_3}: ``NovoValor7'' refere-se ao valor resultante da adição/substração de um valor numério ao valor ``valor7'' do terceiro termo da regra.
 
 \begin{figure}[ht]
 \centering
@@ -1175,11 +1174,11 @@ O funcionamento deste operador de mutação proposto é ilustrado na Figura \ref
 \subsection{Operação de Recombinação de Partículas}
 \label{sec:mdpso_recomb_part}
 
-A recombinação entre as partículas tem o objetivo de combinar características de duas partículas pais com o intuito de gerar regras mais promissoras que as originais. O mecanismo de recombinação de partículas implementado pelo mDPSO é detalhado pelo Algoritmo \ref{alg:recomb}. A variável $pl$ é uma partícula genérica, utilizada tanto para designar a partícula líder tanto em $C_k.gbest$ quanto em $p.pbest$ (Ver Algoritmo \ref{alg:mdpso_atualiza_part}), visto que para ambas as recombinações são realizadas de forma similar. 
+A recombinação entre as partículas tem o objetivo de combinar características de duas partículas pais com o intuito de gerar regras mais promissoras que as originais. O mecanismo de recombinação de partículas implementado pelo mDPSO é detalhado pelo Algoritmo \ref{alg:recomb}. A variável $pl$ é uma partícula genérica, utilizada tanto para designar a partícula líder tanto em $C_k.gbest$ quanto em $p.pbest$ (Ver Algoritmo \ref{alg:mdpso_atualiza_part}), visto que ambas as recombinações são realizadas de forma similar. 
 
-A representação proposta neste trabalho permite que partículas com tamanhos (número de termos) distintos de regras possam ser recombinadas. Diante disto, o operador de recombinação implementado pelo mDPSO retorna uma nova regra, resultante da recombinação da partícula corrente $p$ e da partícula líder em $p.pbest$ ou $C_k.gbest$, com variação do número de termos entre 1 e o valor máximo de [$|p|$, $|p.pbest|$, $|C_k.gbest|$], onde $|x|$ retorna o número de termos presente na partícula $x$. 
+A representação proposta neste trabalho permite que partículas com tamanhos (número de termos) distintos de regras possam ser recombinadas. Diante disto, o operador de recombinação implementado pelo mDPSO retorna uma nova regra, resultante da recombinação da partícula corrente $p$ e da partícula líder em $p.pbest$ ou $C_k.gbest$, com variação do número de termos entre 1 e o valor máximo de [$|p|$, $|p.pbest|$, $|C_k.gbest|$], onde $|x|$ retorna o número de termos presentes na partícula $x$. 
 
-Cabe mencionar que durante a operação de recombinação a partícula resultante pode sofrer uma redução no número de termos. Tal alteração no número de termos da regra durante a recombinação, deve-se à aleatoriedade do processo de seleção dos termos a serem adicionados à solução filha, bem como o mecanismo de eliminação de termos repetidos implementado pelas partículas no mDPSO.
+Cabe mencionar que durante a operação de recombinação a partícula resultante pode apresentar um número reduzido de termos. Tal alteração no número de termos da regra durante a recombinação, deve-se à aleatoriedade do processo de seleção dos termos a serem adicionados à solução filha, bem como o mecanismo de eliminação de termos repetidos implementado pelas partículas no mDPSO.
 
 \begin{algorithm}[ht]
 \caption{Recombinação entre partículas}.
@@ -1213,11 +1212,11 @@ A Figura \ref{fig:recomb} ilustra o processo de recombinação entre duas regras
 \section{Busca Local Pareto}
 \label{sec:mdpso_busca_local}
 
-Mecanismos de busca local são importantes por possibilitar refinamentos das soluções obtidas por um algoritmo de otimização combinatória. O Algoritmo \ref{alg:BLP} detalha o mecanismo de busca local Pareto, baseado no método {\em Neutral Improvement Pareto} (NPI) (Ver Algoritmo \ref{alg:NPI}) executado ao final de cada iteração do mDPSO com objetivo de introduzir novas soluções não-dominadas no repositório $C_k.gbest$. 
+Mecanismos de busca local são importantes por possibilitar refinamentos das soluções obtidas por um algoritmo de otimização combinatória. O Algoritmo \ref{alg:BLP} detalha o mecanismo de busca local Pareto, baseado no método {\em Neutral Improvement Pareto} (NPI) (Ver Algoritmo \ref{alg:NPI}), executado ao final de cada iteração do mDPSO com objetivo de introduzir novas soluções não-dominadas no repositório $C_k.gbest$. 
 
 Durante a implementação da rotina de busca local Pareto proposta, observou-se que o NPI foi a abordagem que apresentou os melhores resultados quando comparado com o BFI e FPI, sendo por isso implementado pelo mDPSO. 
 
-Além disso, um mecanismo de geração de soluções vizinhas (linha 4 do Algoritmo) baseada na mutação gaussiana é também utilizado. Esta mutação se mostrou eficiente em várias situações estudadas por \citeonline{Higashi_2003} e para o problema analisado neste trabalho apresentou bons resultados ao ser combinada com NPI na rotina de busca local Pareto proposta.  
+Além disso, um mecanismo de geração de soluções vizinhas (linha 4 do Algoritmo) baseada na mutação gaussiana é também utilizado. Esta mutação se mostrou eficiente em várias situações estudadas por \citeonline{Higashi_2003} e, para o problema analisado neste trabalho, apresentou bons resultados ao ser combinada com NPI na rotina de busca local Pareto proposta.  
 
 \begin{algorithm}[ht]
 \caption{Busca Local Pareto}
@@ -1232,6 +1231,7 @@ Além disso, um mecanismo de geração de soluções vizinhas (linha 4 do Algori
   \If{$s'.visited$ é TRUE}
     \State \textbf{continue};
   \EndIf
+  \State Avaliar $s'$;
   \State $s'.visited \leftarrow$ TRUE;
   \If{$f(s') \parallel f(p) \vee f(s') \prec f(p)$} // $\parallel$ - \small{não há relação de dominância}
   	\State $C_k.gbest \leftarrow merge(C_k.gbest, \{s'\})$;
@@ -1287,23 +1287,23 @@ Foram avaliados os desempenhos de 04 (quatro) algoritmos (mDPSO, J48, SMO e RBF)
 	\item \textbf{Wine}: Possui 13 atributos numéricos e 178 instâncias divididas em três classes: A (59), B (71) e C (48);
 \end{itemize}
 
-Sendo as bases de dados {\em DG1}, {\em DG2}, {\em Hepatitis} e {\em Wine} foram as mesmas analisadas no trabalho de \citeonline{Pereira_2014}.
+Sendo que as bases de dados {\em DG1}, {\em DG2}, {\em Hepatitis} e {\em Wine} foram as mesmas analisadas no trabalho de \citeonline{Pereira_2014}.
 
-Durante a avaliação do desempenho dos algoritmos utilizou-se a {\em validação cruzada k=10-fold} (10 partições) que consiste em dividir a base de dados em {\em k} subconjuntos, sendo {\em k-1} partições para treinamento e 01 (uma) para teste. Este processo de treinamento e teste é repetido com todos os {\em k} subconjuntos e a média dos resultados obtidos é utilizada como indicador da qualidade do modelo \cite{Castro_2016}.
+Durante a avaliação do desempenho dos algoritmos utilizou-se a {\em validação cruzada k=10-fold} (10 partições) que consiste em dividir a base de dados em {\em k} subconjuntos, sendo {\em k-1} partições para treinamento e 01 (uma) para teste. Este processo de treinamento e teste é repetido com todos os {\em k} subconjuntos e a média dos resultados obtido é utilizada como indicador da qualidade do modelo \cite{Castro_2016}.
 
-A validação cruzada utilizada é estratificada e consiste em distribuir uniformemente as classes das amostras entre as partições. Por exemplo, dado um conjunto de dados dividido em duas classes e sabendo que a {\em classe A} possui 20\% dos objetos e a {\em classe B} possui 80\% das amostras. Ao se fazer a separação da base de treinamento e teste é garantido a manutenção da mesma proporção entre as {\em k} partições. Para os testes realizados, as mesmas partições são utilizadas em todos os algoritmos de maneira a tentar prover uma justa comparação entre todos os algoritmos analisados. 
+A validação cruzada utilizada é estratificada e consiste em distribuir uniformemente as classes das amostras entre as partições. Por exemplo, dado um conjunto de dados dividido em duas classes e sabendo que a {\em classe A} possui 20\% dos objetos e a {\em classe B} possui 80\% das amostras. Ao se fazer a separação da base de treinamento e teste é garantido a manutenção da mesma proporção entre as {\em k} partições. Para os testes realizados, as mesmas partições são utilizadas em todos os algoritmos de maneira a tentar prover uma justa comparação entre os algoritmos analisados. 
 
 Com objetivo de atestar o desempenho dos algoritmos: mDPSO, J48, SMO e RBF, segundo o produto da sensibilidade pela especificidade global, foram aplicados os seguintes testes estatísticos: Teste {\em Kolgomorov-Smirnov} para verificação da normalidades das amostras; teste {\em One-Way Analysis of Variance} (ANOVA) e o teste {\em post-hoc Tukey} para construção de um {\em ranking} de desempenho dos algoritmos - O {\em ranking} pode indicar performance superior, similar (empate) ou inferior entre os algoritmos. É importante frisar que os testes devem ser realizados na ordem apresentada.
 
-Para realização dos testes  {\em post-hoc Tukey}, adotou-se o valor de confiança igual a 95\% (o mesmo adotado no trabalho de \citeonline{Pereira_2012}). Logo, se o p-valor retornado pelo teste for inferior a $0.05$, sugere-se que o desempenho do par de algoritmos analisados é estatisticamente diferente. Do contrário, não há diferença estatística significativa entre ambos. Dessa maneira, se os desempenhos  de ambos os algoritmos não apresentarem diferenças significativas entre eles, então ambos são alocados na mesma posição do {\em ranking}. 
+Para realização dos testes  {\em post-hoc Tukey}, adotou-se o valor de confiança igual a 95\% (o mesmo adotado no trabalho de \citeonline{Pereira_2012}). Logo, se o p-valor retornado pelo teste for inferior a $0.05$, sugere-se que o desempenho do par de algoritmos analisados é estatisticamente diferente. Do contrário, não há diferença estatística significativa entre ambos. Dessa maneira, se o desempenho de ambos algoritmos não apresentarem diferenças significativas entre eles, então ambos são alocados na mesma posição do {\em ranking}. 
 
-Segundo \citeonline{Carrano_2011}, a avaliação de desempenho de algoritmos não-determinísticos, tais como Algoritmos Evolutivos, não podem ser realizadas utilizando resultados de algoritmos determinísticos para cada instância do problema. A natureza estocástica desses métodos introduz uma variabilidade aleatória na resposta fornecida pelo algoritmo, uma vez que a solução obtida pelo mesmo pode variar consideravelmente a cada execução. Ainda que a mesma solução seja obtida, o tempo computacional necessário para alcançar tal solução é geralmente diferente em diferentes execuções do mesmo algoritmo.
+Segundo \citeonline{Carrano_2011}, a avaliação de desempenho de algoritmos não-determinísticos, tais como Algoritmos Evolutivos, não pode ser realizada utilizando resultados de algoritmos determinísticos para cada instância do problema. A natureza estocástica desses métodos introduz uma variabilidade aleatória na resposta fornecida pelo algoritmo, uma vez que a solução obtida pelo mesmo pode variar consideravelmente a cada execução. Ainda que a mesma solução seja obtida, o tempo computacional necessário para alcançar tal solução é geralmente diferente em diferentes execuções do mesmo algoritmo.
 
 \section{Parâmetros dos Algoritmos}
 
-Para o mDPSO, os parâmetros $\omega$, $c_1$ e $c_2$ foram definidas com os seguintes valores de 0.9, 0.8 e 0.8 respectivamente, sendo tais valores escolhidos por meio de experimentações. Foram utilizadas 90 partículas com critério de parada 30000 avaliações da função-objetivo em todas as bases de dados analisadas neste trabalho.
+Para o mDPSO, os parâmetros $\omega$, $c_1$ e $c_2$ foram definidas com os seguintes valores de 0.9, 0.8 e 0.8 respectivamente, sendo tais valores escolhidos por meio de experimentações. Foram utilizadas 90 partículas com critério de parada de 30000 avaliações da função-objetivo em todas as bases de dados analisadas neste trabalho.
 
-Os parâmetros utilizados pelos 03 (três) algoritmos implementados pela ferramenta WEKA, para cada base de dados, são listados na Tabela \ref{tab:config_weka}. A escolha destes parâmetros foi inspirada pelo trabalho de \citeonline{Pereira_2014}, sendo utilizadas as melhores configurações obtidas por meio de experimentações durante o desenvolvimento deste trabalho:
+Os parâmetros utilizados pelos 03 (três) algoritmos implementados pela ferramenta WEKA, para cada base de dados, são listados na Tabela \ref{tab:config_weka}. A escolha destes parâmetros foi inspirada no trabalho de \citeonline{Pereira_2014}, sendo utilizadas as melhores configurações obtidas por meio de experimentações durante o desenvolvimento deste trabalho:
 
 \begin{table}[ht]
 \setlength{\arrayrulewidth}{.2em}
@@ -1332,7 +1332,7 @@ Os parâmetros utilizados pelos 03 (três) algoritmos implementados pela ferrame
 
 Nesta seção do trabalho, faz-se a descrição dos resultados obtidos com cada algoritmo utilizando a métrica sensibilidade $\times$ especificidade para cada base de dados. Nesta fase do trabalho, somente serão avaliados os resultados gerados pelos algoritmos mDPSO e os algoritmos implementados no WEKA. 
 
-O produto da sensibilidade pela especificidade global relativo às 50 execuções (amostras) de cada algoritmo, na base de dados {\em Diabetes}, é apresentado na Figura \ref{fig:diabetes}. Os resultados apresentados pelo gráfico mostram que o mDPSO apresentou o melhor desempenho para a base {\em Diabetes}, com média superior aos demais. Observa-se também que os valores médios obtidos para a métrica sensibilidade $\times$ especificidade entre os algoritmos J48 e SMO ficaram bem próximos, com uma pequena vantagem para o SMO (Ver Tabela \ref{tab:sen_esp_global}), chamando a atenção o desvio padrão obtido pelo J48, bem superior ao obtido pelo SMO. O RBF foi o algoritmo que apresentou o pior desempenho.
+O produto da sensibilidade pela especificidade global relativo às 50 execuções (amostras) de cada algoritmo, na base de dados {\em Diabetes}, é apresentado na Figura \ref{fig:diabetes}. Os resultados apresentados pelo gráfico mostram que o mDPSO apresentou o melhor desempenho para a base {\em Diabetes}, com média superior aos demais. Observa-se também que os valores médios obtidos para a métrica sensibilidade $\times$ especificidade entre os algoritmos J48 e SMO ficaram bem próximos, com uma pequena vantagem para o SMO. Observa-se também ue o desvio padrão obtido pelo j48 é superior ao obtido pelo SMO. O RBF foi o algoritmo que apresentou o pior desempenho.
 
 \begin{figure}[!ht]
 \centering
@@ -1646,10 +1646,9 @@ Assim, de maneira geral, foi possível observar que o mDPSO apresentou resultado
 
 \section{Conclusão}
 
-Neste capítulo foram apresentados os resultados obtidos em relação ao mDPSO e 03 (três) algoritmos clássicos (Árvore de Decisão, RBF e SVM) implementados pelo WEKA em 07 (sete) bases de dados previamente selecionadas. 
+Neste capítulo foram apresentados os resultados obtidos na comparação do algoritmo mDPSO com 03 (três) algoritmos clássicos (Árvore de Decisão, RBF e SVM) implementados pelo WEKA em 07 (sete) bases de dados previamente selecionadas. 
 
-Durante os experimentos, o mDPSO chamou a atenção pelo desempenho considerado satisfatório, uma vez que os resultados revelam que o algoritmo se mostrou promissor, principalmente ao se analisar o seu desempenho em bases de dados desbalanceadas. Em relação às demais bases de dados, mostrou-se competitivo com resultados comparáveis com a Árvore de Decisão, RBF e SVM implementadas pelo WEKA em várias bases de dados analisadas no decorrer dos experimentos analisados.
-
+Os experimentos mostraram um desempenho satisfatório do algoritmo mDPSO frente aos outros 03 algoritmos avaliados neste trabalho. Os resultados revelam que o mDPSO se mostrou promissor, principalmente ao se analisar o seu desempenho em bases de dados desbalanceadas. Em relação às demais bases de dados, mostrou-se competitivo com resultados comparáveis com a Árvore de Decisão, RBF e SVM implementadas pelo WEKA em várias bases de dados analisadas no decorrer dos experimentos analisados.
 
 % ---------
 % Conclusão
@@ -1665,20 +1664,19 @@ A partir dos resultados obtidos, observou-se que o mDPSO se mostrou competitivo,
 
 Foram implementados uma rotina de geração da população inicial, um mecanismo de busca local Pareto, adaptado do NPI, para refinamento das soluções encontradas e operadores de recombinação e mutacção específicos ao problema de classificação de dados estudado. No entanto, percebe-se que alguns pontos do mDPSO ainda requerem maior estudo, visto que certas funcionalidades foram desenvolvidas por meio de testes e experimentações, como por exemplo, as taxas de probabilidades atribuidas a cada operador lógico utilizadas durante a geração da população inicial e durante a operação de mutação em um operador na regra da partícula. 
 
-Outro aspecto em relação ao mDPSO que é imporante mencionar, refere-se a capacidade do algoritmo atualmente em apenas manipular atributos númericos, sendo necessária a realização de tarefas de pré-processamento para a utilização de atributos textuais ou mesmo de atributos não-convencionais (geográficos). Para o futuro é esperado estender tais funcionalidades.
+Outro aspecto em relação ao mDPSO que é imporante mencionar, refere-se a capacidade do algoritmo atualmente em apenas manipular atributos númericos, sendo necessária a realização de tarefas de pré-processamento para a utilização de atributos textuais ou mesmo de atributos não-convencionais (geográficos). Para o futuro é esperado estender tais funcionalidades, especialmente para que o mDPSO possa manipular dados geográficos, semelhante ao trabalho realizado por \citeonline{Pereira_2014}.
 
-De maneira geral, é possível notar que o mDPSO obteve resultados considerados positivos, devido ao seu desempenho considerado satisfatório quando comparados aos algoritmos estudados neste trabalho e implementados pelo WEKA. É importante também destacar a capacidade do algoritmo proposto em lidar com bases de dados desbalanceadas, visto que boa parte dos problemas encontrados hoje possuem algum grau de desbalanceamento, logo o presente trabalho se torna relevante neste sentido, não somente do ponto de vista científico, como também do ponto de vista prático.
+De maneira geral, é possível notar que o mDPSO obteve resultados considerados positivos, devido ao seu desempenho considerado satisfatório quando comparados aos algoritmos estudados neste trabalho e implementados pelo WEKA. É importante também destacar a capacidade do algoritmo proposto em lidar com bases de dados desbalanceadas, visto que boa parte dos problemas encontrados hoje possuem algum grau de desbalanceamento. Logo o presente trabalho se torna relevante neste sentido, não somente do ponto de vista científico, como também do ponto de vista prático.
 
 \section{Trabalhos Futuros}
 
 Como trabalhos futuros, pode-se citar:
 
 \begin{itemize}
-\item Aprimorar o mecanismo de busca local Pareto do mDPSO visando refinar a qualidade das soluções encontradas pelo algoritmo. A motivação para este fato se deve ao baixo desempenho apresentado pelo mDPSO durante a classificação de dados em algumas bases de dados analisadas quando comparados aos algoritmos do WEKA selecionados neste trabalho;
-\item Em determinadas situações, algumas rotinas implementados do mDPSO foram desenvolvidos por meio de experimentações, dessa forma, estudos mais aprofundados poderiam auxiliar no aprimoramento destas funcionalidades;
+\item Aprimorar o mecanismo de busca local Pareto do mDPSO visando refinar a qualidade das soluções encontradas pelo algoritmo. A motivação para este fato se deve ao baixo desempenho apresentado pelo mDPSO durante a classificação de dados em algumas bases de dados analisadas quando comparados aos algoritmos do WEKA explorados neste trabalho;
 \item É esperado estender o mDPSO para classificação de dados híbridos (banco de dados geográficos), uma vez que são poucos os trabalhos referentes à classificação de dados não-convencionais encontrados na literatura. Acredita-se que o algoritmo poderia incluir tal funcionaliade sem grandes alterações em sua implementação atual;
-\item Outro aspecto importante seria estender o mDPSO para as três variantes propostas por \citeonline{Pereira_2014} para comparação com três algoritmos (Árvore de Decisão, RBF e SVM) implementados pelo WEKA em seu trabalho. O mDPSO somente implementa o seguinte mecanismo ({\em One rule matching}) a fim de classificar o conjunto de testes. Deste modo, um comparativo geral entre os três mecanismos ({\em One rule matching}, {\em Counting of matching rules} e {\em Weighted count of matching rules}) poderia fornecer um melhor comparativo entre o mDPSO e as abordagens analisadas;
-\item Uma investigação de desempenho do mDPSO com outras bases de dados também seria relevante. Além do mais, outros algoritmos reconhecidos na literatura poderiam ser utilizados em análises e comparações de desempenho.
+\item Outro aspecto importante seria estender o mDPSO para as três variantes propostas por \citeonline{Pereira_2014} para comparação com três algoritmos (Árvore de Decisão, RBF e SVM) implementados pelo WEKA em seu trabalho. O mDPSO implementa o mecanismo {\em One rule matching} a fim de classificar o conjunto de testes. Deste modo, um comparativo geral entre os três mecanismos ({\em One rule matching}, {\em Counting of matching rules} e {\em Weighted count of matching rules}) poderia fornecer um melhor comparativo entre o mDPSO e as abordagens analisadas;
+\item Uma investigação de desempenho do mDPSO com outras bases de dados também seria relevante. Além do mais, outros algoritmos reconhecidos na literatura poderiam ser utilizados para comparação com o mDPSO e avaliar o seu desempenho. Importante frisar que o mDPSO não foi avaliado plenamente com o algoritmo PG proposto por \citeonline{Pereira_2014}. Neste caso seria interessante comparar o desempenho de ambas as implementações.
 \end{itemize}
 
 
