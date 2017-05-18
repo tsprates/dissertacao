@@ -385,7 +385,7 @@ Finalmente, no capítulo \ref{ch:cons_finais} são apresentadas as consideraçõ
 
 Neste capítulo é apresentada a fundamentação teórica utilizada no desenvolvimento do presente trabalho. Numa primeira etapa, são apresentados os principais conceitos relacionados a metaheurística {\em Particle Swarm Optimization} (PSO) necessários à compreensão da abordagem proposta. 
 
-Posteriormente, conceitos e definições da área de otimização multiobjetivo serão apresentados, visto que o PSO proposto é um algoritmo multiobjetivo. Conceitos referentes à busca local Pareto também são relacionados, pois são utilizados ao final de cada iteração com intuito de refinar as soluções encontras para implementação da rotina de perturbação das soluções não-dominadas do PSO multiobjetivo. 
+Posteriormente, conceitos e definições da área de otimização multiobjetivo serão apresentados, visto que o PSO proposto é um algoritmo multiobjetivo. Conceitos referentes à busca local Pareto também são relacionados, pois são utilizados ao final de cada iteração para implementação da rotina de perturbação das soluções não-dominadas do PSO multiobjetivo. 
 
 Ao final do capítulo são relacionados os principais conceitos e definições referentes às áreas de mineração e classificação de dados, sendo elencados trabalhos relevantes referentes ao tema abordado deste trabalho.
 
@@ -395,9 +395,9 @@ Ao final do capítulo são relacionados os principais conceitos e definições r
 
 O PSO é uma metaheurística relacionada à área dos Algoritmos Evolucionários e inspirada na dinâmica da vida social de pássaros e cardumes de peixes durante a busca por alimentos \cite{Kennedy_1995}.
 
-De acordo \citeonline{Cunha_2014}, a busca por alimentos efetuada de maneira coordenada por sociedades de animais envolve a realização de buscas em espaços de elevada dimensão, sobre funções que não apenas são de elevada complexidade, mas que também exigem uma execução contínua de mecanismos de adaptação. As soluções para tais problemas tratam-se de mecanismos bastante bem sucedidos, utilizadas pelos atuais seres biológicos existentes no planeta, pois permitiram a essas espécies estar hoje presentes após bilhões de anos. Devido a isso, acredita-se que ao emular tais processos, possa-se transpostar o sucesso destes processos na construção de mecanismos computacionais destinados a resolução de problemas de alta complexidade.
+De acordo \citeonline{Cunha_2014}, a busca por alimentos efetuada de maneira coordenada por sociedades de animais envolve a realização de buscas em espaços de elevada dimensão, sobre funções que não apenas são de elevada complexidade, mas que também exigem uma execução contínua de mecanismos de adaptação. As soluções para tais problemas tratam-se de mecanismos bastante bem sucedidos, utilizadas pelos atuais seres biológicos existentes no planeta, pois permitiram a essas espécies estar hoje presentes após bilhões de anos. Por isso, acredita-se que ao emular tais processos, possa-se transpostar o sucesso destes processos na construção de mecanismos computacionais destinados a resolução de problemas de alta complexidade.
  
-Relacionada com os Algoritmos Evolucionários, encontra-se a sub-área chamada de {\em Inteligência de Enxame} que inclui qualquer tentativa de construir algoritmos e técnicas inspiradas no comportamento coletivo de colônias de insetos e outras sociedades animais. Segundo \citeonline{Millonas_1993}, cinco princípios regem esses algoritmos:
+Relacionada com os Algoritmos Evolucionários encontra-se a subárea chamada de {\em Inteligência de Enxame} que inclui qualquer tentativa de construir algoritmos e técnicas inspiradas no comportamento coletivo de colônias de insetos e outras sociedades animais. Segundo \citeonline{Millonas_1993}, cinco princípios regem esses algoritmos:
 
 \begin{enumerate}[label=(\roman*)]
 \item \textbf{Proximidade}: Os agentes do enxame devem ser capazes de interagir, de modo a formarem redes sociais.
