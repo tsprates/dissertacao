@@ -52,14 +52,9 @@
 \usepackage{mathtools}
 \usepackage{float}
 %\usepackage[top=3cm, bottom=2cm, left=3cm, right=2cm]{geometry}
+\usepackage{pdfpages}
 
 %\renewcommand{\pretextual}{\pagenumbering{arabic}}
-
-%% Customiza comando \pretextual
-\renewcommand{\pretextual}{
-  \pagenumbering{roman} %%% ou \pagenumbering{Roman}
-  \pagestyle{plain}
-}
 
 % ---
 % Ajusta a marca \textual para que a numeração volte a ser arábica
@@ -68,7 +63,7 @@
 \renewcommand{\textual}{%
   \oldtextual%
   \pagenumbering{arabic} % volta à numeração arábica
-  \setcounter{page}{10}
+  \setcounter{page}{13}
 }
 % ---
 
@@ -225,6 +220,11 @@
 \thispagestyle{empty}
 \imprimirfolhaderosto
 % ---
+
+% --------------
+% Ficha Catalográfica
+% --------------
+\includepdf[pages={1}]{Ficha.pdf}
 
 % --------------
 % Agradecimentos
@@ -1665,7 +1665,7 @@ Denominado de mDPSO, o algoritmo foi comparada com três métodos clássicos, re
 
 A partir dos resultados obtidos, observou-se que o mDPSO se mostrou competitivo, com desempenho considerado promissor, principalmente em bases de dados desbalanceadas, como apresentado durante a análise dos experimentos desenvolvidos neste trabalho.
 
-O algoritmo proposto implementou as seguinte funcionalidades: geração da população inicial; um mecanismo de busca local Pareto, adaptado do NPI, para refinamento das soluções encontradas; e operadores de recombinação e mutação específicos ao problema de classificação de dados estudado. No entanto, percebe-se que alguns pontos do mDPSO ainda requerem maior estudo, visto que certas funcionalidades foram desenvolvidas por meio de testes e experimentações, como por exemplo, as taxas de probabilidades atribuidas a cada operador relacional utilizadas durante a geração da população inicial e durante a operação de mutação em um operador na regra da partícula. 
+O algoritmo proposto implementou as seguinte funcionalidades: geração da população inicial; um mecanismo de busca local Pareto, adaptado do NPI, para refinamento das soluções encontradas e operadores de recombinação e mutação específicos ao problema de classificação de dados estudado. Entretanto, percebe-se que alguns pontos do mDPSO ainda requerem maior estudo, visto que certas funcionalidades foram desenvolvidas por meio de testes e experimentações, como por exemplo, as taxas de probabilidades atribuídas a cada operador relacional utilizadas durante a geração da população inicial e durante a operação de mutação em um operador na regra da partícula. 
 
 Outro aspecto em relação ao mDPSO que é imporante mencionar, refere-se ao fato de que a versão atual do algoritmo manipula apenas atributos que armazenam valores convencionais (númericos), sendo necessária a realização de tarefas de pré-processamento para a utilização de atributos textuais ou mesmo de atributos não-convencionais (geográficos). Para o futuro é esperado estender tais funcionalidades, especialmente para que o mDPSO possa manipular dados geográficos, similar ao trabalho realizado por \citeonline{Pereira_2014}.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.29)  18 MAY 2017 20:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.29)  19 JUN 2017 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1427,14 +1427,31 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks52
 \@floatcapt=\box53
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
+)
+\AM@pagewidth=\dimen293
+\AM@pageheight=\dimen294
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box54
+\AM@toc@title=\toks53
+\c@AM@survey=\count294
+\AM@templatesizebox=\box55
+)
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2cite.sty
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
 
 (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip270
 \ABCIauxlen=\skip271
-\c@ABCIaux=\count294
-\c@ABCImax=\count295
+\c@ABCIaux=\count295
+\c@ABCImax=\count296
 
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
@@ -1442,13 +1459,13 @@ Package: relsize 2013/03/29 ver 4.1
 \biblabelsep=\skip272
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks53
+\ABCItoken=\toks54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithm.sty
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
-\@float@every@algorithm=\toks54
-\c@algorithm=\count296
+\@float@every@algorithm=\toks55
+\c@algorithm=\count297
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
@@ -1457,20 +1474,20 @@ Package: algpseudocode
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count297
-\c@ALG@rem=\count298
-\c@ALG@nested=\count299
+\c@ALG@line=\count298
+\c@ALG@rem=\count299
+\c@ALG@nested=\count300
 \ALG@tlm=\skip273
 \ALG@thistlm=\skip274
-\c@ALG@Lnr=\count300
-\c@ALG@blocknr=\count301
-\c@ALG@storecount=\count302
-\c@ALG@tmpcounter=\count303
+\c@ALG@Lnr=\count301
+\c@ALG@blocknr=\count302
+\c@ALG@storecount=\count303
+\c@ALG@tmpcounter=\count304
 \ALG@tmplength=\skip275
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 177.
+Package hyperref Info: Option `colorlinks' set `true' on input line 172.
 \Dissertacao@idxfile=\write6
 \openout6 = `Dissertacao.idx'.
 
@@ -1479,26 +1496,26 @@ Writing index file Dissertacao.idx
 (./Dissertacao.aux)
 \openout1 = `Dissertacao.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 204.
-LaTeX Font Info:    ... okay on input line 204.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 204.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 199.
+LaTeX Font Info:    ... okay on input line 199.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 199.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring ON on input line 204.
+\AtBeginShipoutBox=\box56
+Package hyperref Info: Link coloring ON on input line 199.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1506,30 +1523,30 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count305
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 204.
-LaTeX Info: Redefining \ref on input line 204.
-LaTeX Info: Redefining \pageref on input line 204.
-LaTeX Info: Redefining \nameref on input line 204.
-\myptabbox=\box55
+LaTeX Info: Redefining \nameref on input line 199.
+LaTeX Info: Redefining \ref on input line 199.
+LaTeX Info: Redefining \pageref on input line 199.
+LaTeX Info: Redefining \nameref on input line 199.
+\myptabbox=\box57
 \myptabboxwidth=\skip276
 ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen293
-\scratchbox=\box56
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen294
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks56
+\scratchcounter=\count306
+\scratchdimen=\dimen295
+\scratchbox=\box58
+\nofMPsegments=\count307
+\nofMParguments=\count308
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count309
+\MPscratchDim=\dimen296
+\MPnumerator=\count310
+\makeMPintoPDFobject=\count311
+\everyMPtoPDFconversion=\toks57
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1545,8 +1562,17 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count311
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 218.
+\c@lstlisting=\count312
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
+)
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 213.
 
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
@@ -1554,84 +1580,118 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 228.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 223.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<ot1.cmap>>
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 228.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 223.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oml.cmap>>
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 228
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 223
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )<<oms.cmap>>
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 228
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 223
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 228.
+(Font)              <12> on input line 223.
 <<omx.cmap>>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 228.
+(Font)              <8> on input line 223.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 228.
-LaTeX Font Info:    Try loading font information for U+msa on input line 228.
+(Font)              <6> on input line 223.
+LaTeX Font Info:    Try loading font information for U+msa on input line 223.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 228.
+LaTeX Font Info:    Try loading font information for U+msb on input line 223.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 1062) in paragraph at lines 228--228
+Underfull \hbox (badness 1062) in paragraph at lines 223--223
 []\T1/lmr/m/n/12 Coorientador: Prof. Dr. Re-nato Dou-rado
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.228 
+l.223 
        [1
 
 
 
-] (./agradecimentos.tex) [2
+] <Ficha.pdf, id=26, 597.55246pt x 845.19763pt>
+File: Ficha.pdf Graphic file (type pdf)
+ <use Ficha.pdf>
+Package pdftex.def Info: Ficha.pdf used on input line 227.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ficha.pdf Graphic file (type pdf)
+
+<use Ficha.pdf>
+Package pdftex.def Info: Ficha.pdf used on input line 227.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+ <Ficha.pdf, id=29, page=1, 597.55246pt x 845.19763pt>
+File: Ficha.pdf Graphic file (type pdf)
+
+<use Ficha.pdf, page 1>
+Package pdftex.def Info: Ficha.pdf, page1 used on input line 227.
+(pdftex.def)             Requested size: 597.551pt x 845.19557pt.
+File: Ficha.pdf Graphic file (type pdf)
+ <use Ficha.pdf, page 1>
+Package pdftex.def Info: Ficha.pdf, page1 used on input line 227.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+File: Ficha.pdf Graphic file (type pdf)
+ <use Ficha.pdf, page 1>
+Package pdftex.def Info: Ficha.pdf, page1 used on input line 227.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+File: Ficha.pdf Graphic file (type pdf)
+
+<use Ficha.pdf, page 1>
+Package pdftex.def Info: Ficha.pdf, page1 used on input line 227.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+File: Ficha.pdf Graphic file (type pdf)
+ <use Ficha.pdf, page 1>
+Package pdftex.def Info: Ficha.pdf, page1 used on input line 227.
+(pdftex.def)             Requested size: 597.57834pt x 845.23425pt.
+ [2
+
+ <./Ficha.pdf>]
+(./agradecimentos.tex) [3
+
+] (./resumo.tex [4
+
+]) (./abstract.tex [5
 
 
-] (./resumo.tex [3
-
-]) (./abstract.tex
-[4
-
-
-]) (./Dissertacao.toc
+])
+(./Dissertacao.toc
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <12> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 40.
- [5
+ [6
 
 
-]) [6] [7
+]) [7] [8
 
 
-] [8
+] [9
 
 
-] (./Dissertacao.lof) [9
+] (./Dissertacao.lof) [10
 
-]
-(./Dissertacao.lot) [10
+] (./Dissertacao.lot) [11
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1647,22 +1707,22 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 346.
- [10
+ [13
 
 
-]
-[11] [12] [13
+] [14] [15] [16
 
-] [14]
+] [17]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 432.
- [15] <img/nova_part.png, id=361, 411.5375pt x 329.23pt>
+
+[18] <img/nova_part.png, id=385, 411.5375pt x 329.23pt>
 File: img/nova_part.png Graphic file (type png)
 
 <use img/nova_part.png>
 Package pdftex.def Info: img/nova_part.png used on input line 471.
 (pdftex.def)             Requested size: 205.76825pt x 164.6146pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1672,31 +1732,31 @@ l.486
 
 LaTeX Warning: Command \~ invalid in math mode on input line 497.
 
-[17] [18] [19] [20]
+[20] [21] [22] [23]
 Overfull \hbox (4.66628pt too wide) in paragraph at lines 616--617
 \T1/lmr/m/n/12 ções prá-ti-cas, es-pe-ci-al-mente em pro-ble-mas com-bi-na-tó-r
 ios com-ple-xos ([][]BAS-SEUR; BURKE[][],
  []
 
-[21]
+[24]
 
 LaTeX Warning: Command \textquoteright invalid in math mode on input line 626.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 638.
-[22] [23] [24] [25] <img/modelo.png, id=558, 934.49126pt x 371.3875pt>
+[25] [26] [27] [28] <img/modelo.png, id=583, 934.49126pt x 371.3875pt>
 File: img/modelo.png Graphic file (type png)
 
 <use img/modelo.png>
 Package pdftex.def Info: img/modelo.png used on input line 732.
 (pdftex.def)             Requested size: 373.78989pt x 148.55235pt.
- <img/se-entao.png, id=564, 820.06375pt x 100.375pt>
+ <img/se-entao.png, id=589, 820.06375pt x 100.375pt>
 File: img/se-entao.png Graphic file (type png)
 
 <use img/se-entao.png>
 Package pdftex.def Info: img/se-entao.png used on input line 743.
 (pdftex.def)             Requested size: 410.03087pt x 50.18736pt.
- [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [29pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1712,25 +1772,25 @@ l.749
 
 LaTeX Warning: Command \' invalid in math mode on input line 787.
 
-[27] [28pdfTeX warning (ext4): destination with the same identifier (name{table
+[30] [31pdfTeX warning (ext4): destination with the same identifier (name{table
 .2.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.818 
-      ] [29] [30] [31]
+      ] [32] [33] [34]
 
 LaTeX Warning: Command \' invalid in math mode on input line 882.
 
-[32
+[35
 
-] [33] <img/representacao.png, id=674, 807.015pt x 204.765pt>
+] [36] <img/representacao.png, id=699, 807.015pt x 204.765pt>
 File: img/representacao.png Graphic file (type png)
 
 <use img/representacao.png>
 Package pdftex.def Info: img/representacao.png used on input line 956.
 (pdftex.def)             Requested size: 403.50652pt x 102.38223pt.
- [34]
+ [37]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <17.28> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 962.
 
@@ -1739,13 +1799,13 @@ Overfull \hbox (3.57303pt too wide) in paragraph at lines 967--968
 ra-vés de um re-po-si-tó-rio de so-lu-ções não-dominadas
  []
 
-[35pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
+[38pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.974 
-       <./img/representacao.png>] <img/best.png, id=689, 417.56pt x 349.305pt>
+       <./img/representacao.png>] <img/best.png, id=713, 417.56pt x 349.305pt>
 File: img/best.png Graphic file (type png)
 
 <use img/best.png>
@@ -1764,14 +1824,14 @@ LaTeX Warning: Command \' invalid in math mode on input line 1004.
 
 LaTeX Warning: Command \' invalid in math mode on input line 1005.
 
-[36pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1012 A
          seleÃ§Ã£o dos atributos que compÃµem cada termo da regra Ã© feita d...
- <./img/best.png>] [37] [38pdfTeX warning (ext4): destination with the same ide
+ <./img/best.png>] [40] [41pdfTeX warning (ext4): destination with the same ide
 ntifier (name{table.3.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1791,7 +1851,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 1087.
 
 LaTeX Warning: Command \~ invalid in math mode on input line 1087.
 
-[39]
+[42]
 
 LaTeX Warning: Command \c invalid in math mode on input line 1103.
 
@@ -1804,7 +1864,7 @@ LaTeX Warning: Command \c invalid in math mode on input line 1109.
 
 LaTeX Warning: Command \~ invalid in math mode on input line 1109.
 
-[40] <img/mut_1.png, id=771, 971.63pt x 162.6075pt>
+[43] <img/mut_1.png, id=797, 971.63pt x 162.6075pt>
 File: img/mut_1.png Graphic file (type png)
  <use img/mut_1.png>
 Package pdftex.def Info: img/mut_1.png used on input line 1140.
@@ -1814,12 +1874,12 @@ Overfull \hbox (32.84592pt too wide) in paragraph at lines 1140--1141
  [][] 
  []
 
-<img/mut_2.png, id=775, 784.9325pt x 163.61125pt>
+<img/mut_2.png, id=801, 784.9325pt x 163.61125pt>
 File: img/mut_2.png Graphic file (type png)
  <use img/mut_2.png>
 Package pdftex.def Info: img/mut_2.png used on input line 1154.
 (pdftex.def)             Requested size: 392.46529pt x 81.80542pt.
- [41pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [44pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1832,33 +1892,33 @@ l.1163
                                                   \fi \fi 
 l.1163 
         <./img/mut_1.png> <./img/mut_2.png>]
-<img/mut_3.png, id=788, 792.9625pt x 165.61874pt>
+<img/mut_3.png, id=813, 792.9625pt x 165.61874pt>
 File: img/mut_3.png Graphic file (type png)
  <use img/mut_3.png>
 Package pdftex.def Info: img/mut_3.png used on input line 1170.
 (pdftex.def)             Requested size: 396.48027pt x 82.80916pt.
- [42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [45pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1184 
         <./img/mut_3.png>]
-<img/recombinacao.png, id=800, 860.21375pt x 251.94125pt>
+<img/recombinacao.png, id=824, 860.21375pt x 251.94125pt>
 File: img/recombinacao.png Graphic file (type png)
 
 <use img/recombinacao.png>
 Package pdftex.def Info: img/recombinacao.png used on input line 1209.
 (pdftex.def)             Requested size: 430.10582pt x 125.9703pt.
- [43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+ [46pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1218 
-        <./img/recombinacao.png>] [44] [45] [46
+        <./img/recombinacao.png>] [47] [48] [49
 
-] [47]
+] [50]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <17.28> on input line 1333.
 
@@ -1874,13 +1934,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1333.
 
-[48] <graficos/diabetes.png, id=861, 436.63126pt x 285.31593pt>
+[51] <graficos/diabetes.png, id=885, 436.63126pt x 285.31593pt>
 File: graficos/diabetes.png Graphic file (type png)
 
 <use graficos/diabetes.png>
 Package pdftex.def Info: graficos/diabetes.png used on input line 1342.
 (pdftex.def)             Requested size: 305.63979pt x 199.71979pt.
- [49pdfTeX warning (ext4): destination with the same identifier (name{table.4.3
+ [52pdfTeX warning (ext4): destination with the same identifier (name{table.4.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1893,25 +1953,25 @@ l.1348
                                                   \fi \fi 
 l.1348 
         <./graficos/diabetes.png (PNG copy)>]
-<graficos/DGA1.png, id=869, 436.63126pt x 285.31593pt>
+<graficos/DGA1.png, id=893, 436.63126pt x 285.31593pt>
 File: graficos/DGA1.png Graphic file (type png)
  <use graficos/DGA1.png>
 Package pdftex.def Info: graficos/DGA1.png used on input line 1372.
 (pdftex.def)             Requested size: 305.63979pt x 199.71979pt.
 
-<graficos/DGA2.png, id=871, 436.63126pt x 285.31593pt>
+<graficos/DGA2.png, id=895, 436.63126pt x 285.31593pt>
 File: graficos/DGA2.png Graphic file (type png)
  <use graficos/DGA2.png>
 Package pdftex.def Info: graficos/DGA2.png used on input line 1400.
 (pdftex.def)             Requested size: 305.63979pt x 199.71979pt.
 
-[50pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}
+[53pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1424 \end{table}
-                  ] [51pdfTeX warning (ext4): destination with the same identif
+                  ] [54pdfTeX warning (ext4): destination with the same identif
 ier (name{figure.4.11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1930,13 +1990,13 @@ l.1427
                                                   \fi \fi 
 l.1427 
         <./graficos/DGA1.png (PNG copy)>]
-<graficos/hepatitis.png, id=883, 436.63126pt x 285.31593pt>
+<graficos/hepatitis.png, id=908, 436.63126pt x 285.31593pt>
 File: graficos/hepatitis.png Graphic file (type png)
 
 <use graficos/hepatitis.png>
 Package pdftex.def Info: graficos/hepatitis.png used on input line 1430.
 (pdftex.def)             Requested size: 305.63979pt x 199.71979pt.
- [52pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+ [55pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
 12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1949,13 +2009,13 @@ l.1455
                                                   \fi \fi 
 l.1455 
         <./graficos/DGA2.png (PNG copy)> <./graficos/hepatitis.png (PNG copy)>]
-<graficos/ionosphere.png, id=890, 436.63126pt x 285.31593pt>
+<graficos/ionosphere.png, id=916, 436.63126pt x 285.31593pt>
 File: graficos/ionosphere.png Graphic file (type png)
 
 <use graficos/ionosphere.png>
 Package pdftex.def Info: graficos/ionosphere.png used on input line 1458.
 (pdftex.def)             Requested size: 305.63979pt x 199.71979pt.
- [53pdfTeX warning (ext4): destination with the same identifier (name{table.4.7
+ [56pdfTeX warning (ext4): destination with the same identifier (name{table.4.7
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1968,13 +2028,13 @@ name{figure.4.14}) has been already used, duplicate ignored
                                                   \fi \fi 
 l.1501 \end{table}
                    <./graficos/ionosphere.png (PNG copy)>]
-<graficos/unbalanced.png, id=898, 436.63126pt x 285.31593pt>
+<graficos/unbalanced.png, id=922, 436.63126pt x 285.31593pt>
 File: graficos/unbalanced.png Graphic file (type png)
 
 <use graficos/unbalanced.png>
 Package pdftex.def Info: graficos/unbalanced.png used on input line 1507.
 (pdftex.def)             Requested size: 305.63979pt x 199.71979pt.
- [54pdfTeX warning (ext4): destination with the same identifier (name{table.4.8
+ [57pdfTeX warning (ext4): destination with the same identifier (name{table.4.8
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1986,7 +2046,7 @@ l.1536
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1536 
-       ] <graficos/wine.png, id=906, 436.63126pt x 285.31593pt>
+       ] <graficos/wine.png, id=930, 436.63126pt x 285.31593pt>
 File: graficos/wine.png Graphic file (type png)
 
 <use graficos/wine.png>
@@ -1998,7 +2058,7 @@ Overfull \hbox (12.07951pt too wide) in paragraph at lines 1563--1564
 ase \T1/lmr/m/it/12 Wine\T1/lmr/m/n/12 , investigou-
  []
 
-[55pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+[58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2010,7 +2070,7 @@ l.1585
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1585 
-        <./graficos/unbalanced.png (PNG copy)>] [56pdfTeX warning (ext4): desti
+        <./graficos/unbalanced.png (PNG copy)>] [59pdfTeX warning (ext4): desti
 nation with the same identifier (name{figure.4.16}) has been already used, dupl
 icate ignored
 
@@ -2034,7 +2094,7 @@ Overfull \hbox (16.4116pt too wide) in paragraph at lines 1601--1602
  [][] 
  []
 
-[57pdfTeX warning (ext4): destination with the same identifier (name{table.4.13
+[60pdfTeX warning (ext4): destination with the same identifier (name{table.4.13
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2048,19 +2108,19 @@ has been already used, duplicate ignored
                                                   \fi \fi 
 l.1648 A
         ssim, de maneira geral, foi possÃ­vel observar que o mDPSO apresento...
-] [58] [59
+] [61] [62
 
-] (./Dissertacao.bbl [60]
+] (./Dissertacao.bbl [63]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\uppercase' on input line 3.
 
 bibitemlist
-[61
+[64
 
-] [62] [63])
+] [65] [66])
 No file Dissertacao.ind.
-[64]
+[67]
 \tf@toc=\write7
 \openout7 = `Dissertacao.toc'.
 
@@ -2082,10 +2142,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1712.
  ) 
 Here is how much of TeX's memory you used:
- 24638 strings out of 493029
- 396838 string characters out of 6136234
- 549271 words of memory out of 5000000
- 27307 multiletter control sequences out of 15000+600000
+ 25257 strings out of 493029
+ 406927 string characters out of 6136234
+ 567182 words of memory out of 5000000
+ 27905 multiletter control sequences out of 15000+600000
  110900 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,19n,55p,1146b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2107,10 +2167,10 @@ onts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbo1
 nts/type1/public/lm/lmsso17.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Dissertacao.pdf (66 pages, 841054 bytes).
+Output written on Dissertacao.pdf (67 pages, 896911 bytes).
 PDF statistics:
- 1277 PDF objects out of 1440 (max. 8388607)
- 1146 compressed objects within 12 object streams
- 267 named destinations out of 1000 (max. 500000)
- 561 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1302 PDF objects out of 1440 (max. 8388607)
+ 1164 compressed objects within 12 object streams
+ 268 named destinations out of 1000 (max. 500000)
+ 581 words of extra memory for PDF output out of 10000 (max. 10000000)
 
