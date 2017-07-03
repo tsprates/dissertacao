@@ -7,56 +7,56 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{13}{chapter.1}
-\contentsline {section}{\numberline {1.1}Publica\IeC {\c c}\IeC {\~o}es}{13}{section.1.1}
-\contentsline {section}{\numberline {1.2}Objetivos do Trabalho}{13}{section.1.2}
-\contentsline {section}{\numberline {1.3}Metodologia}{14}{section.1.3}
-\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{15}{section.1.4}
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdu\IeC {\c c}\IeC {\~a}o}}{14}{chapter.1}
+\contentsline {section}{\numberline {1.1}Publica\IeC {\c c}\IeC {\~o}es}{14}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos do Trabalho}{14}{section.1.2}
+\contentsline {section}{\numberline {1.3}Metodologia}{15}{section.1.3}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{16}{section.1.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{16}{chapter.2}
-\contentsline {section}{\numberline {2.1}Particle Swarm Optimization}{16}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Descri\IeC {\c c}\IeC {\~a}o do PSO}{17}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Representa\IeC {\c c}\IeC {\~a}o da Part\IeC {\'\i }cula}{19}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}PSO Combinatorial}{20}{subsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.3.1}PSO Baseado em Permuta\IeC {\c c}\IeC {\~a}o}{21}{subsubsection.2.1.3.1}
-\contentsline {subsection}{\numberline {2.1.4}Gera\IeC {\c c}\IeC {\~a}o da Popula\IeC {\c c}\IeC {\~a}o Inicial}{22}{subsection.2.1.4}
-\contentsline {subsection}{\numberline {2.1.5}T\IeC {\'e}cnicas de Nicho}{22}{subsection.2.1.5}
-\contentsline {section}{\numberline {2.2}Otimiza\IeC {\c c}\IeC {\~a}o Multiobjetivo}{22}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}PSO Multiobjetivo}{24}{subsection.2.2.1}
-\contentsline {section}{\numberline {2.3}Busca Local Pareto}{24}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Best Pareto Improvement - BPI}{25}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}First Pareto Improvement - FPI}{26}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Neutral Pareto Improvement - NPI}{26}{subsection.2.3.3}
-\contentsline {section}{\numberline {2.4}Minera\IeC {\c c}\IeC {\~a}o de Dados}{27}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Classifica\IeC {\c c}\IeC {\~a}o de Dados}{28}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Avalia\IeC {\c c}\IeC {\~a}o da Classifica\IeC {\c c}\IeC {\~a}o de Dados}{30}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{31}{section.2.5}
-\contentsline {section}{\numberline {2.6}Conclus\IeC {\~a}o}{34}{section.2.6}
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Particle Swarm Optimization}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Descri\IeC {\c c}\IeC {\~a}o do PSO}{18}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Representa\IeC {\c c}\IeC {\~a}o da Part\IeC {\'\i }cula}{20}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}PSO Combinatorial}{21}{subsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.3.1}PSO Baseado em Permuta\IeC {\c c}\IeC {\~a}o}{22}{subsubsection.2.1.3.1}
+\contentsline {subsection}{\numberline {2.1.4}Gera\IeC {\c c}\IeC {\~a}o da Popula\IeC {\c c}\IeC {\~a}o Inicial}{23}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}T\IeC {\'e}cnicas de Nicho}{23}{subsection.2.1.5}
+\contentsline {section}{\numberline {2.2}Otimiza\IeC {\c c}\IeC {\~a}o Multiobjetivo}{23}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}PSO Multiobjetivo}{25}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Busca Local Pareto}{25}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Best Pareto Improvement - BPI}{26}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}First Pareto Improvement - FPI}{27}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Neutral Pareto Improvement - NPI}{27}{subsection.2.3.3}
+\contentsline {section}{\numberline {2.4}Minera\IeC {\c c}\IeC {\~a}o de Dados}{28}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Classifica\IeC {\c c}\IeC {\~a}o de Dados}{29}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Avalia\IeC {\c c}\IeC {\~a}o da Classifica\IeC {\c c}\IeC {\~a}o de Dados}{31}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Trabalhos Relacionados}{32}{section.2.5}
+\contentsline {section}{\numberline {2.6}Conclus\IeC {\~a}o}{35}{section.2.6}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {mDPSO - Algoritmo Biobjetivo baseado em PSO para Classifica\IeC {\c c}\IeC {\~a}o de Dados}}{35}{chapter.3}
-\contentsline {section}{\numberline {3.1}Formula\IeC {\c c}\IeC {\~a}o do Problema}{35}{section.3.1}
-\contentsline {section}{\numberline {3.2}Descri\IeC {\c c}\IeC {\~a}o do mDPSO}{36}{section.3.2}
-\contentsline {section}{\numberline {3.3}Representa\IeC {\c c}\IeC {\~a}o da Part\IeC {\'\i }cula}{37}{section.3.3}
-\contentsline {section}{\numberline {3.4}Reposit\IeC {\'o}rios {\em gbest} e {\em pbest}}{38}{section.3.4}
-\contentsline {section}{\numberline {3.5}Gera\IeC {\c c}\IeC {\~a}o do Enxame Inicial}{39}{section.3.5}
-\contentsline {section}{\numberline {3.6}Operador de Turbul\IeC {\^e}ncia}{41}{section.3.6}
-\contentsline {section}{\numberline {3.7}Atualiza\IeC {\c c}\IeC {\~a}o da Posi\IeC {\c c}\IeC {\~a}o da Part\IeC {\'\i }cula}{41}{section.3.7}
-\contentsline {subsection}{\numberline {3.7.1}Opera\IeC {\c c}\IeC {\~a}o de Muta\IeC {\c c}\IeC {\~a}o de Part\IeC {\'\i }cula}{43}{subsection.3.7.1}
-\contentsline {subsubsection}{\numberline {3.7.1.1}Adic\IeC {\~a}o de Novo Termo}{43}{subsubsection.3.7.1.1}
-\contentsline {subsubsection}{\numberline {3.7.1.2}Mudan\IeC {\c c}a de Operador}{44}{subsubsection.3.7.1.2}
-\contentsline {subsubsection}{\numberline {3.7.1.3}Adi\IeC {\c c}\IeC {\~a}o ou Subtra\IeC {\c c}\IeC {\~a}o do Valor N\IeC {\'u}merico}{45}{subsubsection.3.7.1.3}
-\contentsline {subsection}{\numberline {3.7.2}Opera\IeC {\c c}\IeC {\~a}o de Recombina\IeC {\c c}\IeC {\~a}o de Part\IeC {\'\i }culas}{45}{subsection.3.7.2}
-\contentsline {section}{\numberline {3.8}Busca Local Pareto}{46}{section.3.8}
-\contentsline {section}{\numberline {3.9}Conclus\IeC {\~a}o}{47}{section.3.9}
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {mDPSO - Algoritmo Biobjetivo baseado em PSO para Classifica\IeC {\c c}\IeC {\~a}o de Dados}}{36}{chapter.3}
+\contentsline {section}{\numberline {3.1}Formula\IeC {\c c}\IeC {\~a}o do Problema}{36}{section.3.1}
+\contentsline {section}{\numberline {3.2}Descri\IeC {\c c}\IeC {\~a}o do mDPSO}{37}{section.3.2}
+\contentsline {section}{\numberline {3.3}Representa\IeC {\c c}\IeC {\~a}o da Part\IeC {\'\i }cula}{38}{section.3.3}
+\contentsline {section}{\numberline {3.4}Reposit\IeC {\'o}rios {\em gbest} e {\em pbest}}{39}{section.3.4}
+\contentsline {section}{\numberline {3.5}Gera\IeC {\c c}\IeC {\~a}o do Enxame Inicial}{40}{section.3.5}
+\contentsline {section}{\numberline {3.6}Operador de Turbul\IeC {\^e}ncia}{42}{section.3.6}
+\contentsline {section}{\numberline {3.7}Atualiza\IeC {\c c}\IeC {\~a}o da Posi\IeC {\c c}\IeC {\~a}o da Part\IeC {\'\i }cula}{42}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Opera\IeC {\c c}\IeC {\~a}o de Muta\IeC {\c c}\IeC {\~a}o de Part\IeC {\'\i }cula}{44}{subsection.3.7.1}
+\contentsline {subsubsection}{\numberline {3.7.1.1}Adic\IeC {\~a}o de Novo Termo}{44}{subsubsection.3.7.1.1}
+\contentsline {subsubsection}{\numberline {3.7.1.2}Mudan\IeC {\c c}a de Operador}{45}{subsubsection.3.7.1.2}
+\contentsline {subsubsection}{\numberline {3.7.1.3}Adi\IeC {\c c}\IeC {\~a}o ou Subtra\IeC {\c c}\IeC {\~a}o do Valor N\IeC {\'u}merico}{46}{subsubsection.3.7.1.3}
+\contentsline {subsection}{\numberline {3.7.2}Opera\IeC {\c c}\IeC {\~a}o de Recombina\IeC {\c c}\IeC {\~a}o de Part\IeC {\'\i }culas}{46}{subsection.3.7.2}
+\contentsline {section}{\numberline {3.8}Busca Local Pareto}{47}{section.3.8}
+\contentsline {section}{\numberline {3.9}Conclus\IeC {\~a}o}{48}{section.3.9}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados Experimentais}}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{49}{section.4.1}
-\contentsline {section}{\numberline {4.2}Par\IeC {\^a}metros dos Algoritmos}{51}{section.4.2}
-\contentsline {section}{\numberline {4.3}An\IeC {\'a}lise Baseada na M\IeC {\'e}trica Sensibilidade $\times $ Especificidade Global}{51}{section.4.3}
-\contentsline {section}{\numberline {4.4}Conclus\IeC {\~a}o}{61}{section.4.4}
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Resultados Experimentais}}{50}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{50}{section.4.1}
+\contentsline {section}{\numberline {4.2}Par\IeC {\^a}metros dos Algoritmos}{52}{section.4.2}
+\contentsline {section}{\numberline {4.3}An\IeC {\'a}lise Baseada na M\IeC {\'e}trica Sensibilidade $\times $ Especificidade Global}{52}{section.4.3}
+\contentsline {section}{\numberline {4.4}Conclus\IeC {\~a}o}{62}{section.4.4}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{62}{chapter.5}
-\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{63}{section.5.1}
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Considera\IeC {\c c}\IeC {\~o}es Finais}}{63}{chapter.5}
+\contentsline {section}{\numberline {5.1}Trabalhos Futuros}{64}{section.5.1}
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\uppercase {Refer\^encias Bibliogr\'aficas}}{64}{section*.12}
+\contentsline {chapter}{\uppercase {Refer\^encias Bibliogr\'aficas}}{65}{section*.12}

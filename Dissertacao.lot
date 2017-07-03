@@ -1,15 +1,15 @@
 \select@language {brazil}
-\contentsline {table}{\numberline {1}{\ignorespaces Matriz de confus\IeC {\~a}o}}{31}{table.2.1}
-\contentsline {table}{\numberline {2}{\ignorespaces Probabilidade de sele\IeC {\c c}\IeC {\~a}o dos operadores relacionais usada pelas rotinas de gera\IeC {\c c}\IeC {\~a}o de part\IeC {\'\i }culas e de muta\IeC {\c c}\IeC {\~a}o do mDPSO.}}{41}{table.3.2}
-\contentsline {table}{\numberline {3}{\ignorespaces Par\IeC {\^a}metros de configura\IeC {\c c}\IeC {\~a}o do WEKA em cada base de dados.}}{52}{table.4.3}
-\contentsline {table}{\numberline {4}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Diabetes}.}}{53}{table.4.4}
-\contentsline {table}{\numberline {5}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em DGA 1}.}}{54}{table.4.5}
-\contentsline {table}{\numberline {6}{\ignorespaces p-valor medido para o produto da sensibilidade $\times $ especificidade global de cada algoritmo na base de dados {\em DGA 2} global.}}{54}{table.4.6}
-\contentsline {table}{\numberline {7}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Hepatitis}.}}{56}{table.4.7}
-\contentsline {table}{\numberline {8}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Ionosphere}.}}{57}{table.4.8}
-\contentsline {table}{\numberline {9}{\ignorespaces Desempenho de cada algoritmo usando o produto da sensibilidade pela especificidade em cada classe na base {\em Ionosphere} global.}}{57}{table.4.9}
-\contentsline {table}{\numberline {10}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Unbalanced}.}}{58}{table.4.10}
-\contentsline {table}{\numberline {11}{\ignorespaces p-valor medido para o produto da sensibilidade $\times $ especificidade global de cada algoritmo na base de dados {\em Wine}.}}{59}{table.4.11}
-\contentsline {table}{\numberline {12}{\ignorespaces Desempenho dos algoritmos segundo a m\IeC {\'e}trica sensibilidade $\times $ especificidade para cada classe da base {\em Wine}.}}{59}{table.4.12}
-\contentsline {table}{\numberline {13}{\ignorespaces Desempenho de cada algoritmo segundo o produto da sensibilidade pela especificidade global para cada base de dados.}}{60}{table.4.13}
-\contentsline {table}{\numberline {14}{\ignorespaces {\em Ranking} de desempenho de cada algoritmo.}}{60}{table.4.14}
+\contentsline {table}{\numberline {1}{\ignorespaces Matriz de confus\IeC {\~a}o}}{32}{table.2.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Probabilidade de sele\IeC {\c c}\IeC {\~a}o dos operadores relacionais usada pelas rotinas de gera\IeC {\c c}\IeC {\~a}o de part\IeC {\'\i }culas e de muta\IeC {\c c}\IeC {\~a}o do mDPSO.}}{42}{table.3.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Par\IeC {\^a}metros de configura\IeC {\c c}\IeC {\~a}o do WEKA em cada base de dados.}}{53}{table.4.3}
+\contentsline {table}{\numberline {4}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Diabetes}.}}{54}{table.4.4}
+\contentsline {table}{\numberline {5}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em DGA 1}.}}{55}{table.4.5}
+\contentsline {table}{\numberline {6}{\ignorespaces p-valor medido para o produto da sensibilidade $\times $ especificidade global de cada algoritmo na base de dados {\em DGA 2} global.}}{55}{table.4.6}
+\contentsline {table}{\numberline {7}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Hepatitis}.}}{57}{table.4.7}
+\contentsline {table}{\numberline {8}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Ionosphere}.}}{58}{table.4.8}
+\contentsline {table}{\numberline {9}{\ignorespaces Desempenho de cada algoritmo usando o produto da sensibilidade pela especificidade em cada classe na base {\em Ionosphere} global.}}{58}{table.4.9}
+\contentsline {table}{\numberline {10}{\ignorespaces p-valor medido para o produto da sensibilidade pela especificidade global de cada algoritmo na base de dados {\em Unbalanced}.}}{59}{table.4.10}
+\contentsline {table}{\numberline {11}{\ignorespaces p-valor medido para o produto da sensibilidade $\times $ especificidade global de cada algoritmo na base de dados {\em Wine}.}}{60}{table.4.11}
+\contentsline {table}{\numberline {12}{\ignorespaces Desempenho dos algoritmos segundo a m\IeC {\'e}trica sensibilidade $\times $ especificidade para cada classe da base {\em Wine}.}}{60}{table.4.12}
+\contentsline {table}{\numberline {13}{\ignorespaces Desempenho de cada algoritmo segundo o produto da sensibilidade pela especificidade global para cada base de dados.}}{61}{table.4.13}
+\contentsline {table}{\numberline {14}{\ignorespaces {\em Ranking} de desempenho de cada algoritmo.}}{61}{table.4.14}
